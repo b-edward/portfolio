@@ -76,7 +76,7 @@ input[type=submit], button {
     background-color: #1690ec;
 }
 
-input[type=text] {
+input[type=text], input[type=text]:focus {
     border-radius: 20px;
     padding: 10px;
     width: 40%;
