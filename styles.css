@@ -1,0 +1,83 @@
+form {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    font: arial;
+}
+
+#advForm {
+    display: inline;
+    text-align: left;    
+    font: arial;
+}
+
+#lucky {
+    display: inline;
+    margin-top: 0px;
+}
+
+#imgAdv {
+    display: inline;
+    margin-left: 15px;
+    margin-top: 0px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+input[type=submit], button {
+    margin: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 140px;
+    border-style: hidden;
+}
+
+#search:hover, #image:hover, #luckyButton:hover {
+    border-style: solid;
+}
+
+#advanced {
+    display: block;
+    margin-left: 50%;
+    background-color: #1B98F5;
+    color: white;
+    border-radius: 0%;
+    border-style: solid; 
+    padding: 7px;
+    font: arial;
+}
+
+#advanced:hover {
+    background-color: #3944F7;
+}
+
+input[type=text] {
+    border-radius: 20px;
+    padding: 10px;
+    font: arial;
+    width: 40%;
+}                
+
+a:link {
+    display: block;
+    text-align: right;
+    font: arial;
+}
+
+#advText, #exactText, #anyText, #noneText {
+    padding: 7px;
+    font: arial;
+    width: 300%;
+    border-radius: 0%;
+} 
+
+table {
+    table-layout: fixed;
+    width: 30%;
+}
