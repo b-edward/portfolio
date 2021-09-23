@@ -81,6 +81,7 @@ input[type=text], input[type=text]:focus {
     padding: 10px;
     width: 40%;
     outline: none;
+    align-self: center;
 }                
 
 a:link, a:after {
