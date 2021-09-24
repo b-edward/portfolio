@@ -1,13 +1,13 @@
 
             h1 {           
-                color: #2a009c;
+                color: #000000;
                 font-weight: 150;
                 font-size: 80px;
                 text-align: center;
                 width: 1000px;
                 height: 300px; 
                 position: absolute;
-                top: 20%;
+                top: 15%;
                 left: 50%;
                 margin: -50px 0 0 -500px;
                 border-width: 3px;
@@ -17,7 +17,7 @@
             .button {           
                 color: #000000;
                 background-color: #ffffff;
-                border-color: #424e83;
+                border-color: #121213;
                 font-size: 20px;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 text-align: center;
@@ -25,7 +25,7 @@
                 height: 60px; 
                 border-width: 1px;                
                 position: absolute;
-                top: 50%;
+                top: 40%;
                 left: 50%;
                 margin: -30px 0 0 -100px;
                 border-radius: 10px;
@@ -34,8 +34,6 @@
 
             #image {          
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                margin: -30px 0 0 -100px;
-
+                top: 30%;
+                left: 30%;
             }
