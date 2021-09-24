@@ -1,7 +1,7 @@
 
             h1 {           
                 color: #000000;
-                font-weight: 150;
+                font-weight: 100;
                 font-size: 80px;
                 text-align: center;
                 width: 1000px;
@@ -18,7 +18,7 @@
                 color: #000000;
                 background-color: #ffffff;
                 border-color: #121213;
-                font-size: 20px;
+                font-size: 30px;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 text-align: center;
                 width: 200px;
@@ -29,7 +29,7 @@
                 left: 50%;
                 margin: -30px 0 0 -100px;
                 border-radius: 10px;
-                border-width: 5px;
+                border-width: 2px;
             }
 
             #image {          
@@ -37,3 +37,4 @@
                 top: 30%;
                 left: 30%;
             }
+
