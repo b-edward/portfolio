@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script type="text/javascript">
-          function displayImage()
-          {
-            document.getElementById("image").style.display="block";
-          }
-        </script>
-        <title>Edward Boado</title>    
-    </head>
+  
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <body>
-        <div>
-          <h1>Edward Boado's portfolio page</h1>        
-          <input class="button" id="clickMe" type="button" value="?" onclick="displayImage();"/>
-        </div>
-        <div id="image" style="display: none;">
-          <img src="./underconstruction.jpg">
-        </div>
-    </body>
+    <!-- link to external files -->
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <script type="text/javascript" src="scripts/main.js"></script>
+
+
+
+    <title>Edward Boado</title>    
+  </head>
+
+  <body>
+
+    <!-- nav bar -->
+    <header>
+      <p id="navTitle">Edward Boado</p>
+      <ul class="nav">
+        <li class="navlink"><a href="#">Home</a></li>
+        <li class="navlink"><a href="#">About</a></li>
+        <li class="navlink"><a href="#">Projects</a></li>
+        <li class="navlink"><a href="#">Contact</a></li>
+      </ul>
+      <div id="navButton">
+        <img src="images/navButton.png">
+      </div>
+    </header>
+
+    <div id="home">
+      <div id="logo-container">
+        <img id="logo" src="images/logoLight.png">
+      </div>
+    </div>
+
+    
+  </body>
 </html>
