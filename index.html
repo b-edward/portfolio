@@ -9,8 +9,9 @@
 
     <!-- link to external files -->
     <link rel="stylesheet" type="text/css" href="style/styles.css">
-    <script type="text/javascript" src="scripts/main.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet"> 
 
 
     <title>Edward Boado</title>    
@@ -21,14 +22,14 @@
     <!-- nav bar -->
     <header>
       <p id="navTitle">Edward Boado</p>
-      <ul class="nav">
+      <ul id="nav" class="nav-horizontal">
         <li class="navlink"><a href="#">Home</a></li>
         <li class="navlink"><a href="#">About</a></li>
         <li class="navlink"><a href="#">Projects</a></li>
         <li class="navlink"><a href="#">Contact</a></li>
       </ul>
       <div id="navButton">
-        <img src="images/navButton.png">
+        <img src="images/navButton.png" id="navImage" onclick="toggleNav();">
       </div>
     </header>
 
@@ -39,5 +40,6 @@
     </div>
 
     
+    <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
