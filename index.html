@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Link to external css file -->
-    <!-- <link rel="stylesheet" type="text/css" href="styles/styles.css">     -->
-    <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/edwardboado.dev/styles/styles.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">    
+    <!-- <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/edwardboado.dev/styles/styles.css">  -->
     
     <!-- Links for Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,10 +24,10 @@
     <header>
       <p id="navTitle">Edward Boado</p>
       <ul id="nav" class="nav-horizontal">
-        <li class="navlink"><a href="#home">Home</a></li>
-        <li class="navlink"><a href="#projects">Projects</a></li>
-        <li class="navlink"><a href="#about">About</a></li>
-        <li class="navlink"><a href="#contact">Contact</a></li>
+        <li class="navlink" onclick="CloseNav();"><a href="#home" >Home</a></li>
+        <li class="navlink" onclick="CloseNav();"><a href="#projects">Projects</a></li>
+        <li class="navlink" onclick="CloseNav();"><a href="#about">About</a></li>
+        <li class="navlink" onclick="CloseNav();"><a href="#contact">Contact</a></li>
       </ul>
       <img src="https://storage.googleapis.com/edwardboado.dev/images/navButton.png" id="navImage" onclick="ToggleNav();">
     </header>
@@ -43,201 +43,278 @@
     <div class="projectSection" id="projects">
       <br>
       <h2>PERSONAL PROJECTS</h2>
-
+      <!-- Project info cards -->
       <div class="project-container">
+        <!-- Food Saver App -->
         <div class="project">
-            <img src="https://storage.googleapis.com/edwardboado.dev/images/foodSaver.png" alt="Food Saver Mobile Application" class="projectImage">
+            <img src="https://storage.googleapis.com/edwardboado.dev/images/foodSaver.png"
+              alt="Food Saver Mobile Application">
             <div class="content">
                 <h3>Food Saver Mobile Application</h3>
-                <p>1st Place Prize Winner</p> 
-                <p>Project submission for Condor Hacks Hackathon 2021.</p>
-                <p>Database hosted on Google Firebase Realtime Database, App on Google Play Store.</p>
+                <ul>
+                  <li>1st Place Prize Winner</li>
+                  <li>Group project submission for Condor Hacks Hackathon 2021</li>
+                  <li>Project aims to help users track their food in order to reduce food waste and save money</li>
+                  <li>Responsible for backend implementation and connecting with Firebase realtime database</li>
+                  <li>Responsible for deploying to Google Play Store</li>
+                </ul>
                 <div class="tags"> 
-                  <span>C#</span>
-                  <span>.NET</span>
-                  <span>Xamarin</span>                   
-                  <span>GCP</span>                
-                  <span>Firebase</span>               
-                  <span>noSQL</span>               
-                  <span>Mobile</span>             
-                  <span>Android</span>           
-                  <span>Hackathon</span>
+                  <span class="skillTags">C#</span>
+                  <span class="skillTags">.NET</span>
+                  <span class="skillTags">Xamarin</span>                   
+                  <span class="skillTags">GCP</span>                
+                  <span class="skillTags">Firebase</span>               
+                  <span class="skillTags">noSQL</span>               
+                  <span class="skillTags">Mobile</span>             
+                  <span class="skillTags">Android</span>           
+                  <span class="skillTags">Hackathon</span>
                 </div>
                 <a href="#" class="btn">Details</a>
             </div>
         </div>
 
+        <!-- Greenify App -->
         <div class="project">
-          <img src="https://storage.googleapis.com/edwardboado.dev/images/greenify.png" alt="Greenify Web Application Prototype" class="projectImage">
+          <img src="https://storage.googleapis.com/edwardboado.dev/images/greenify.png" 
+            alt="Greenify Web Application Prototype">
           <div class="content">
               <h3>Greenify Web Application</h3>
-              <p>Project submission for Geekfest Hackathon 2021.</p>
+              <ul>
+                <li>Group project submission for Geekfest Hackathon 2021</li>
+                <li>Project aims to gamify carbon footprint tracking to encourage users to make sustainable choices</li>
+                <li>Responsible for coordinating team, teaching MVC design pattern and GitHub version control</li>
+                <li>Created JavaScript functions to control menu interface</li>
+                <li>Presented completed prototype through two rounds of judging</li>
+              </ul>
               <div class="tags"> 
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>                  
-                <span>jQuery</span>                  
-                <span>Web</span>         
-                <span>Hackathon</span>
+                <span class="skillTags">HTML</span>
+                <span class="skillTags">CSS</span>
+                <span class="skillTags">JavaScript</span>                  
+                <span class="skillTags">jQuery</span>                  
+                <span class="skillTags">Web</span>         
+                <span class="skillTags">Hackathon</span>
               </div>
               <a href="#" class="btn">Details</a>
           </div>          
         </div>
 
+        <!-- Study Quiz App -->
         <div class="project">
-          <img src="https://storage.googleapis.com/edwardboado.dev/images/quiz.png" alt="Study Quiz Windows Application" class="projectImage">
+          <img src="https://storage.googleapis.com/edwardboado.dev/images/quiz.png" 
+            alt="Study Quiz Windows Application" >
           <div class="content">
               <h3>Study Quiz Windows Application</h3>
-              <p>Project submission for Google Developer Student Club's Demo Day Competition 2021.</p>
-              <p>Server hosted on a Microsoft Azure Virtual Machine.</p>
+              <ul>
+                <li>Individual submission for Google Developer Student Club's Demo Day Competition 2021</li>
+                <li>A quiz program for students to practice for tests and exams</li>
+                <li>Points are timer based, with players and scores tracked to show a leaderboard</li>
+                <li>Hosted on MS Azure, using a MySQL database</li>
+              </ul>
               <div class="tags"> 
-                <span>C#</span>
-                <span>.NET</span>
-                <span>WPF</span>                  
-                <span>MySQL</span>               
-                <span>Azure</span>               
-                <span>Windows</span>
+                <span class="skillTags">C#</span>
+                <span class="skillTags">.NET</span>
+                <span class="skillTags">WPF</span>                  
+                <span class="skillTags">MySQL</span>               
+                <span class="skillTags">Azure</span>               
+                <span class="skillTags">Windows</span>
               </div>
               <a href="#" class="btn">Details</a>
           </div>
       </div>
 
+        <!-- Auctions App -->
       <div class="project">
-        <img src="https://storage.googleapis.com/edwardboado.dev/images/auctions.png" alt="Auctions Web Application" class="projectImage">
+        <img src="https://storage.googleapis.com/edwardboado.dev/images/auctions.png" 
+          alt="Auctions Web Application">
         <div class="content">
             <h3>Auctions Web Application</h3>
-            <p>An auction sales site similar to eBay or kijiji.</p>
+            <ul>
+              <li>An auction sales site similar to eBay or kijiji.</li>
+              <li>Users can create an account to post items for sale, as well as bid on items already listed.</li>
+            </ul>
             <div class="tags"> 
-              <span>Python</span>
-              <span>Django</span>
-              <span>SQLite</span>                
-              <span>HTML</span>               
-              <span>CSS</span>          
-              <span>Web</span>
+              <span class="skillTags">Python</span>
+              <span class="skillTags">Django</span>
+              <span class="skillTags">SQLite</span>                
+              <span class="skillTags">HTML</span>               
+              <span class="skillTags">CSS</span>          
+              <span class="skillTags">Web</span>
             </div>
             <a href="#" class="btn">Details</a>
         </div>
       </div>
 
+        <!-- Portfolio App -->
       <div class="project">
-        <img src="https://storage.googleapis.com/edwardboado.dev/images/logoDark.png" alt="Portfolio Web Site" class="projectImage">
+        <img src="https://storage.googleapis.com/edwardboado.dev/images/logoDark.png" 
+          alt="Portfolio Web Site">
         <div class="content">
             <h3>Portfolio Web Site</h3>
-            <p>Single Page Application to display my portfolio.</p>
-            <p>Hosted on Google Cloud Platform. Created with Vanilla Javascript and CSS.</p>
+            <ul>
+              <li>Single Page Application to highlight relevant projects</li>
+              <li>Designed to allow practice with Vanilla Javascript and CSS</li>
+              <li>Hosted on Google Cloud Platform using Cloud Storage and Load Balancing</li>
+            </ul>
             <div class="tags"> 
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>                
-              <span>GCP</span>               
-              <span>Web</span>
+              <span class="skillTags">HTML</span>
+              <span class="skillTags">CSS</span>
+              <span class="skillTags">JavaScript</span>                
+              <span class="skillTags">GCP</span>               
+              <span class="skillTags">Web</span>
             </div>
             <a href="#" class="btn">Details</a>
         </div>
       </div>
       
       <div class="project" id="placeholder">
-        <img src="" alt="" class="projectImage">
+        <img src="" alt="" >
         <div class="content">
             <p></p>
             <div class="tags"> 
             </div>
         </div>
       </div>
-    </div>
 
-
-    <div>
       <br>
       <h2>SCHOOL PROJECTS</h2>
-
-      <div class="project">
-        <img src="https://storage.googleapis.com/edwardboado.dev/images/sqTMS.png" alt="Auctions Web Application" class="projectImage">
-        <div class="content">
-            <h3>Tranportation Management System for Windows</h3>
-            <p></p>
-            <div class="tags"> 
-              <span>C#</span>
-              <span>.NET</span>
-              <span>MySQL</span>                
-              <span>Agile</span>               
-              <span>Scrum</span>          
-              <span>Unit Test</span>   
-              <span>Integration Test</span>   
-              <span>Azure Boards</span>
-            </div>
-            <a href="#" class="btn">Details</a>
+      <!-- Container for project info cards -->
+      <div class="project-container">
+        <!-- TMS App -->
+        <div class="project">
+          <img src="https://storage.googleapis.com/edwardboado.dev/images/sqTMS.png"
+            alt="Tranportation Management System">
+          <div class="content">
+              <h3>Tranportation Management System for Windows</h3>
+              <ul>
+                <li>Term Project completed with a group of 4 students using Agile/Scrum methodology</li>
+                <li>A commercial application for a logistics company to take transport contracts, hire drivers, 
+                  track deliveries, and invoice the customer</li>
+                <li>After a successful demo, our project received a grade of 95%.</li>
+              </ul>
+              <div class="tags"> 
+                <span class="skillTags">C#</span>
+                <span class="skillTags">.NET</span>
+                <span class="skillTags">MySQL</span>                
+                <span class="skillTags">Agile</span>               
+                <span class="skillTags">Scrum</span>           
+                <span class="skillTags">TDD</span>   
+                <span class="skillTags">Unit Test</span>   
+                <span class="skillTags">Integration Test</span>   
+                <span class="skillTags">Azure Boards</span>
+              </div>
+              <a href="#" class="btn">Details</a>
+          </div>
         </div>
-      </div>
 
-      <div class="project">
-        <img src="" alt="Auctions Web Application" class="projectImage">
-        <div class="content">
-            <h3>Hi-Lo Game Web Application</h3>
-            <p></p>
-            <div class="tags"> 
-              <span>C#</span>
-              <span>.NET</span>
-              <span>MySQL</span>                
-              <span>Agile</span>               
-              <span>Scrum</span>          
-              <span>Unit Test</span>   
-              <span>Integration Test</span>   
-              <span>Azure Boards</span>
-              <span>Doxygen</span>
-            </div>
-            <a href="#" class="btn">Details</a>
+        <!-- Hi-Lo App -->
+        <div class="project">
+          <img src="https://storage.googleapis.com/edwardboado.dev/images/hiLo.png" alt=">Hi-Lo Game" >
+          <div class="content">
+              <h3>Hi-Lo Game Web Application</h3>
+              <ul>
+                <li>A client-server application that plays a guessing game where application will tell the player if they
+                  are too high or too low until they guess the correct number</li>
+                <li>Received a grade of 97%</li>
+                <li><a href="https://hiloserver-eb.azurewebsites.net" target="_blank">Play the game</a> on Azure App Service</li>
+              </ul>              
+              <div class="tags"> 
+                <span class="skillTags">C#</span>
+                <span class="skillTags">ASP.NET</span>
+                <span class="skillTags">CSS</span>
+                <span class="skillTags">Azure App Service</span>      
+              </div>
+              <a href="#" class="btn">Details</a>
+          </div>
         </div>
-      </div>
 
-      <div class="project">
-        <img src="" alt="Auctions Web Application" class="projectImage">
-        <div class="content">
-            <h3>HTTP Web Server</h3>
-            <p></p>
-            <div class="tags"> 
-              <span>C#</span>
-              <span>.NET</span>
-              <span>REST</span>                
-              <span>API</span>               
-              <span>IIS</span>          
-            </div>
-            <a href="#" class="btn">Details</a>
+        <!-- Server App -->
+        <div class="project">
+          <img src="https://storage.googleapis.com/edwardboado.dev/images/server.png" alt="Server" >
+          <div class="content">
+              <h3>HTTP Web Server</h3>
+              <ul>
+                <li>Created a web server that responds to TCP/IP requests using the HTTP protocol</li>
+                <li>Parses and creates response according to the HTTP message protocol used between a browser and a web server</li>
+              </ul>
+              <div class="tags"> 
+                <span class="skillTags">C#</span>
+                <span class="skillTags">.NET</span>          
+                <span class="skillTags">HTTP</span>   
+                <span class="skillTags">REST</span>                
+                <span class="skillTags">API</span>               
+                <span class="skillTags">IIS</span>          
+              </div>
+              <a href="#" class="btn">Details</a>
+          </div>
         </div>
-      </div>
 
-      <div class="project">
-        <img src="" alt="Auctions Web Application" class="projectImage">
-        <div class="content">
-            <h3>Movie Information Program</h3>
-            <p></p>
-            <div class="tags"> 
-              <span>C</span>
-              <span>C++</span>
-            </div>
-            <a href="#" class="btn">Details</a>
+        <!-- DS/A App -->
+        <div class="project">
+          <img src="https://storage.googleapis.com/edwardboado.dev/images/linkedList.png" alt="Movie Information Program">
+          <div class="content">
+              <h3>Movie Information Program</h3>
+              <ul>
+                <li>A console application that took in title, genre, and rating information and stored each movie in doubly-linked lists</li>
+                <li>Implemented linked lists, sort, and search algorithms from first principles</li>
+                <li>Received a grade of 100%</li>
+              </ul>
+              <div class="tags"> 
+                <span class="skillTags">C</span>
+                <span class="skillTags">C++</span>
+              </div>
+              <a href="#" class="btn">Details</a>
+          </div>
         </div>
-      </div>
-
+      </div>  
     </div>
 
     <!-- About Me section -->
-    <div id="about">
+    <div class="aboutSection" id="about">
       <br>
       <h2>ABOUT ME</h2>
-      <p>I am a Software Engineering Technology (Co-op) student at Conestoga College in Waterloo, Canada.</p>
-    </div>
+      <div class="about-container">
+        <div class="about">
+          <div class='row'>
+              <img class='column-picture' src="https://storage.googleapis.com/edwardboado.dev/images/edward.jpg" alt="Picture of Edward Boado">
+              <div class='column-text'>
+                <h4>Professional / Academic</h4>
+                <ul>
+                  <li>Available for full time co-op or internships from May 2022 to August 2023</li>
+                  <li>2nd year Software Engineering Technology (Co-op) student at Conestoga College in Waterloo, Canada</li>
+                  <li>Maintained 4.0 GPA each semester</li>
+                  <li>Active member of the Google Developer Student Club at Conestoga</li>
+                  <li>I have a thirst for knowledge and am always learning something new</li>
+                  <li>I enjoy challenges and finding creative solutions</li>
+                  <li>Experienced team player with excellent communication, organization, problem solving, and critical thinking skills</li>
+                </ul>
+                <h4>Personal</h4>
+                <ul>
+                  <li>In my spare time I enjoy club events, participating in hackathon challanges, and working on personal projects</li>
+                  <li>I also enjoy spending time with family, reading (especially Sci-Fi/Fantasy), cooking, and travelling</li>
+                  <li>In warmer months, I love to spend time outdoors hiking, canoeing, and camping with friends and family</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>  
 
-    <!-- Contact section -->
-    <div id="contact">
+    <!-- Contact section -->    
+    <div class="contactSection" id="contact">
       <br>
       <h2>CONTACT ME</h2>
-      <a href="mailto:edward@edwardboado.dev">Email me</a>
-    </div>
-
+      <div class="contact-container">
+        <div class="contact">
+          <a href="mailto:edward@edwardboado.dev" target="_blank"><img src="https://storage.googleapis.com/edwardboado.dev/images/email.png" alt="Email"></a>
+          <a href="https://www.instagram.com/ediamz" target="_blank"><img src="https://storage.googleapis.com/edwardboado.dev/images/instagram.png" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/in/edward-boado" target="_blank"><img src="https://storage.googleapis.com/edwardboado.dev/images/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://github.com/b-edward" target="_blank"><img src="https://storage.googleapis.com/edwardboado.dev/images/github.png" alt="GitHub"></a>        
+        </div>
+      </div>
+    </div>  
 
     <!-- Link to external javascript file -->
-    <!-- <script type="text/javascript" src="scripts/main.js"></script>     -->
-    <script type="text/javascript" src="https://storage.googleapis.com/edwardboado.dev/scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>    
+    <!-- <script type="text/javascript" src="https://storage.googleapis.com/edwardboado.dev/scripts/main.js"></script> -->
   </body>
 </html>
