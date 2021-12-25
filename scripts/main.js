@@ -1,7 +1,21 @@
+// Global for tracking dark/light mode
+var mode;
+
 // Event listeners for dynamic sizing
 window.addEventListener("resize", ResetNav);
 window.addEventListener("load", ResetNav);
 
+// dark-mode media query matched or not
+let dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if(dark) {
+  mode = "dark";
+    SetDarkMode();
+}
+else {
+  mode = "light";
+}
+console.log(mode);
 
 //
 // Toggle the nav bar button menu
@@ -14,14 +28,29 @@ function ToggleNav() {
   // Set up slide animation
   nav.style.transitionDuration = "700ms";
 
-  // Check which image source is present and toggle it
-  if(navButton.src.match("https://storage.googleapis.com/edwardboado.dev/images/navButton.png")) {
-    navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navX.png";
-    nav.style.right = "0";    
+  // Light mode
+  if(mode == "light") {
+    // Check which image source is present and toggle it
+    if(navButton.src.match("https://storage.googleapis.com/edwardboado.dev/images/navButton.png")) {
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navX.png";
+      nav.style.right = "0";    
+    }  
+    else {    
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButton.png";
+      nav.style.right = "-50%";
+    }
   }
-  else {    
-    navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButton.png";
-    nav.style.right = "-50%";
+  // Dark mode
+  else {
+    // Check which image source is present and toggle it
+    if(navButton.src.match("https://storage.googleapis.com/edwardboado.dev/images/navButtonDark.png")) {
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navXDark.png";
+      nav.style.right = "0";    
+    }  
+    else {    
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButtonDark.png";
+      nav.style.right = "-50%";
+    }
   }
 }
 
@@ -39,11 +68,21 @@ function ResetNav() {
 
   // Set up for large and small screens
   if(width > 750) {
-    navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navX.png";
+    if(mode == "light") {
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navX.png";
+    }
+    else {
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navXDark.png";
+    }
     nav.style.right = "0";
   }
   else if(width < 750) {
-    navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButton.png";
+    if(mode == "light") {
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButton.png";
+    }
+    else {
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButtonDark.png";
+    }
     nav.style.right = "-50%";
   }
 }
@@ -65,3 +104,30 @@ function CloseNav() {
   } 
 }
 
+//
+// Change UI to dark mode
+//
+function SetDarkMode() {
+  // Swap colour variables
+  document.documentElement.style.setProperty("--color-accent-dark", "#38b6ff");
+  document.documentElement.style.setProperty("--color-accent-light", "#004aad");
+  document.documentElement.style.setProperty("--color-background-dark", "white");
+  document.documentElement.style.setProperty("--color-background-light", "#232323");
+  document.documentElement.style.setProperty("--color-text-dark", "#ccc");
+  document.documentElement.style.setProperty("--color-text-light", "#white");
+  document.documentElement.style.setProperty("--color-link-hover", "#232323");
+  document.documentElement.style.setProperty("--color-header-background-light", "#004aad");
+  document.documentElement.style.setProperty("--color-header-background-dark", "232323");
+  document.documentElement.style.setProperty("--color-header-text-light", "white");
+  document.documentElement.style.setProperty("--color-header-text-dark", "#ccc");
+
+  // Get elements from DOM
+  var navButton = document.getElementById('navImage');
+  var logo = document.getElementById('logo');
+  var github = document.getElementById('githubLogo');
+
+  // Update elements
+  navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButtonDark.png";
+  logo.src = "https://storage.googleapis.com/edwardboado.dev/images/logoDark.png";
+  github.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
+}

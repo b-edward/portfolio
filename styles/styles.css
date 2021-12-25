@@ -6,6 +6,11 @@
     --color-background-light:white;
     --color-text-dark:#232323;
     --color-text-light:#ccc;
+    --color-link-hover:#004aad;
+    --color-header-background-light:#232323;
+    --color-header-background-dark:#004aad;
+    --color-header-text-light:#ccc;
+    --color-header-text-dark:#ccc;
   }
   
 *::selection{
@@ -14,6 +19,7 @@ color:#fff;
 }
 
 html, body {
+    background:var(--color-background-light);
     margin: 0;
     padding: 0;
     font-family: 'Istok Web', sans-serif;
@@ -26,8 +32,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: var(--color-background-dark);
-    color: var(--color-text-light);
+    background: var(--color-header-background-light);
+    color: var(--color-header-text-light);
     position: fixed; 
     top: 0; 
 }
@@ -47,14 +53,14 @@ header {
 }
 
 .navlink a {
-    color: var(--color-text-light);
+    color: var(--color-header-text-light);
     text-decoration: none;
     margin-top: .2vh;
     font-size: 2.8vh;
 }
 
 .navlink a:hover{
-    color:var(--color-accent-dark)
+    color:var(--color-link-hover);
 }
 
 #navImage {
@@ -68,7 +74,7 @@ header {
 #navTitle { 
     position:absolute;
     letter-spacing: 3px;
-    color: var(--color-text-light);
+    color: var(--color-header-text-light);
     text-decoration: none;
     font-size: 2.8vh;
     left: 3%;
@@ -80,6 +86,7 @@ h2 {
     text-align: center;   
     margin: 5%; 
     font-size: 3.5vw;
+    color:var(--color-text-dark);
 }
 
 /* Styling for home section */
@@ -109,7 +116,7 @@ h2 {
     box-shadow: 0 2rem 2.5rem rgba(0,0,0,.5);
     margin: 4rem;
     width: 30%;
-    max-width: 30%;
+    max-width: 35%;
 }
 
 .projectSection .project-container .project img{
@@ -124,12 +131,12 @@ h2 {
 }
 
 .projectSection .project-container .project .content h3{
-    font-size: 2.8vh;
+    font-size: 2.5vh;
     color:var(--color-text-dark);
 }
 
 .projectSection .project-container .project .content li{
-    font-size: 2.5vh;
+    font-size: 2.3vh;
     color:var(--color-text-dark);
 }
 
@@ -147,7 +154,7 @@ h2 {
     padding:.8rem 1.5rem;
     border:.1rem solid var(--color-accent-dark);
     cursor: pointer;
-    font-size: 2.5vh;
+    font-size: 2vh;
 }
 
 .btn:hover{
@@ -161,6 +168,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background:var(--color-background-light);
 }
 
 .about-container .about {
@@ -169,6 +177,7 @@ h2 {
     box-shadow: 0 2rem 2.5rem rgba(0,0,0,.5);
     width: 90%;
     max-width: 90%;
+    color:var(--color-text-dark);
 }
 
 .row {
@@ -194,9 +203,15 @@ h2 {
     flex-direction: column;
     flex-basis: 100%;
     flex: 2;
+    font-size: 2.3vh;
   } 
 
 /* Styling for contact section */
+.contactSection {
+    margin-top: 10vh;
+    margin-bottom: 30vh;
+}
+
 .contactSection .contact-container{
     display: flex;
     flex-wrap: wrap;
@@ -245,13 +260,13 @@ h2 {
 
     .projectSection .project-container .project{    
         margin: 1.5rem;
-        max-width: 100%;
+        max-width: 85%;
     }
 
     #nav {
         right: -50%;        
         margin: 0;
-        background: var(--color-background-dark);
+        background: var(--color-header-background-light);
         position: fixed;
         top: 70px;
         width: 50%;
@@ -282,6 +297,41 @@ h2 {
     h2 {
         text-align: center;   
         padding-top: 5%; 
-        font-size: 4.5vw;
+        font-size: 5.5vw;
     }
+
+    .contactSection .contact-container .contact{
+        flex:1 1 25rem;
+        overflow: hidden;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 15%;
+        margin-bottom: 5%;
+    }
+
+    .contactSection .contact-container .contact img{
+        width: 20%;
+        height: auto;
+        object-fit: cover;
+        margin: 10%;
+    }
+
+    .column-picture {
+        width: 80vw;
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+      }
+    
+      .column-text {
+        height: auto;
+        padding: 3%;    
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+      } 
+
 }
