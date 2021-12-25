@@ -15,7 +15,6 @@ if(dark) {
 else {
   mode = "light";
 }
-console.log(mode);
 
 //
 // Toggle the nav bar button menu
@@ -95,11 +94,8 @@ function CloseNav() {
   var navButton = document.getElementById('navImage');
   var width = document.documentElement.clientWidth;
 
-  console.log("in the close function");
-
   // Check if the vertical bar is open
   if(width < 750) {
-    console.log("calling toggle");
     ToggleNav();
   } 
 }
@@ -124,10 +120,21 @@ function SetDarkMode() {
   // Get elements from DOM
   var navButton = document.getElementById('navImage');
   var logo = document.getElementById('logo');
-  var github = document.getElementById('githubLogo');
+  var github = document.getElementById('github-contact');
+  var githubFoodSaver = document.getElementById('github-foodSaver');
+  var githubGreenify = document.getElementById('github-greenify');
+  var githubStudyQuiz = document.getElementById('github-studyQuiz');
+  var githubAuctions = document.getElementById('github-auctions');
+  var githubPortfolio = document.getElementById('github-portfolio');
 
   // Update elements
   navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButtonDark.png";
   logo.src = "https://storage.googleapis.com/edwardboado.dev/images/logoDark.png";
   github.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
+  githubFoodSaver.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
+  githubGreenify.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
+  githubStudyQuiz.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
+  githubAuctions.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
+  githubPortfolio.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
 }
+

@@ -104,13 +104,13 @@ h2 {
 }
 
 /* Styling for projects section */
-.projectSection .project-container{
+.projectSection .project-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
   
-.projectSection .project-container .project{
+.projectSection .project-container .project {
     flex:1 1 35rem;
     overflow: hidden;
     box-shadow: 0 2rem 2.5rem rgba(0,0,0,.5);
@@ -119,34 +119,46 @@ h2 {
     max-width: 35%;
 }
 
-.projectSection .project-container .project img{
+.projectSection .project-container .project img {
     width: 100%;
     height: auto;
     max-height: 60%;
     object-fit: cover;
 }
 
-.projectSection .project-container .project .content{
+.projectSection .project-container .project img:hover {
+    width: 99%;
+    border: 3px solid var(--color-accent-dark);
+}
+
+.projectSection .project-container .project .content {
     margin: 1.5rem;
 }
 
-.projectSection .project-container .project .content h3{
+.projectSection .project-container .project .content h3 {
     font-size: 2.5vh;
     color:var(--color-text-dark);
 }
 
-.projectSection .project-container .project .content li{
+.projectSection .project-container .project .content li {
     font-size: 2.3vh;
     color:var(--color-text-dark);
 }
 
-.projectSection .project-container .project .content .tags{
+.projectSection .project-container .project .content .tags {
     font-size: 2vh;
     color:var(--color-text-dark);
 }
 
+.projectSection .project-container .project .content .github-project {    
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 2.5vh;
+}
+
 /* Styling for buttons */
-.btn{
+.btn {
     display: inline-block;
     margin: 3vh 0;
     background: var(--color-accent-dark);
@@ -157,7 +169,7 @@ h2 {
     font-size: 2vh;
 }
 
-.btn:hover{
+.btn:hover {
     background:var(--color-accent-light);
     color:black;
     font-weight: bold;
