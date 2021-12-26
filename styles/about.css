@@ -1,0 +1,42 @@
+/* Styling for about section */
+.aboutSection .about-container {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background:var(--color-background-light);
+}
+
+.about-container .about {
+    flex:1 1 35rem;
+    overflow: hidden;
+    box-shadow: 0 2rem 2.5rem rgba(0,0,0,.5);
+    width: 90%;
+    max-width: 90%;
+    color:var(--color-text-dark);
+}
+
+.about-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column-picture {
+    width: 25vw;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .column-text {
+    height: auto;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+    font-size: 2.3vh;
+  } 

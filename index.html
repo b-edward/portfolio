@@ -8,8 +8,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Link to external css file -->
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">    
-    <!-- <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/edwardboado.dev/styles/styles.css">  -->
+    <link rel="stylesheet" type="text/css" href="styles/navBar.css">    
+    <link rel="stylesheet" type="text/css" href="styles/about.css">   
+    <link rel="stylesheet" type="text/css" href="styles/projects.css">   
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">   
+    <link rel="stylesheet" type="text/css" href="styles/imagePopup.css">    
+    <!-- <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/edwardboado.dev/styles/navBar.css">  -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/edwardboado.dev/styles/about.css">  -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/edwardboado.dev/styles/projects.css">  -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/edwardboado.dev/styles/contact.css">  -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/edwardboado.dev/styles/imagePopup.css">  -->
     
     <!-- Links for Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +56,8 @@
         <!-- Food Saver App -->
         <div class="project">
             <img src="https://storage.googleapis.com/edwardboado.dev/images/foodSaver.png"
-              alt="Food Saver Mobile Application">
+              alt="Food Saver Mobile Application" id="preview-foodSaver" 
+              onload="PopupImage(document.getElementById('preview-foodSaver'));">
             <div class="content">
                 <h3>Food Saver Mobile Application</h3>
                 <ul>
@@ -65,12 +74,12 @@
                   <span class="skillTags">GCP</span>                
                   <span class="skillTags">Firebase</span>               
                   <span class="skillTags">noSQL</span>               
-                  <span class="skillTags">Mobile</span>             
                   <span class="skillTags">Android</span>           
                   <span class="skillTags">Hackathon</span>
                 </div>                
                 <a href="https://github.com/b-edward/CondorHacks_Hackathon" target="_blank">
-                  <img src="https://storage.googleapis.com/edwardboado.dev/images/github.png" alt="GitHub" id="github-foodSaver" class="github-project">
+                  <img src="https://storage.googleapis.com/edwardboado.dev/images/github.png" 
+                  alt="GitHub" id="github-foodSaver" class="github-project">
                 </a>  
             </div>
         </div>
@@ -78,7 +87,8 @@
         <!-- Greenify App -->
         <div class="project">
           <img src="https://storage.googleapis.com/edwardboado.dev/images/greenify.png" 
-            alt="Greenify Web Application Prototype">
+            alt="Greenify Web Application Prototype" id="preview-greenify" 
+            onload="PopupImage(document.getElementById('preview-greenify'));">
           <div class="content">
               <h3>Greenify Web Application</h3>
               <ul>
@@ -92,12 +102,12 @@
                 <span class="skillTags">HTML</span>
                 <span class="skillTags">CSS</span>
                 <span class="skillTags">JavaScript</span>                  
-                <span class="skillTags">jQuery</span>                  
-                <span class="skillTags">Web</span>         
+                <span class="skillTags">jQuery</span>       
                 <span class="skillTags">Hackathon</span>
               </div>
               <a href="https://github.com/b-edward/Geekfest_Hackathon" target="_blank">
-                <img src="https://storage.googleapis.com/edwardboado.dev/images/github.png" alt="GitHub" id="github-greenify" class="github-project">
+                <img src="https://storage.googleapis.com/edwardboado.dev/images/github.png" 
+                alt="GitHub" id="github-greenify" class="github-project">
               </a>  
           </div>          
         </div>
@@ -105,7 +115,8 @@
         <!-- Study Quiz App -->
         <div class="project">
           <img src="https://storage.googleapis.com/edwardboado.dev/images/quiz.png" 
-            alt="Study Quiz Windows Application" >
+            alt="Study Quiz Windows Application" id="preview-studyQuiz" 
+            onload="PopupImage(document.getElementById('preview-studyQuiz'));">
           <div class="content">
               <h3>Study Quiz Windows Application</h3>
               <ul>
@@ -119,11 +130,11 @@
                 <span class="skillTags">.NET</span>
                 <span class="skillTags">WPF</span>                  
                 <span class="skillTags">MySQL</span>               
-                <span class="skillTags">Azure</span>               
-                <span class="skillTags">Windows</span>
+                <span class="skillTags">Azure</span>   
               </div>
               <a href="https://github.com/b-edward/DemoDay_StudyQuiz" target="_blank">
-                <img src="https://storage.googleapis.com/edwardboado.dev/images/github.png" alt="GitHub" id="github-studyQuiz" class="github-project">
+                <img src="https://storage.googleapis.com/edwardboado.dev/images/github.png" 
+                alt="GitHub" id="github-studyQuiz" class="github-project">
               </a>  
           </div>
       </div>
@@ -131,7 +142,8 @@
         <!-- Auctions App -->
       <div class="project">
         <img src="https://storage.googleapis.com/edwardboado.dev/images/auctions.png" 
-          alt="Auctions Web Application">
+          alt="Auctions Web Application" id="preview-auctions" 
+          onload="PopupImage(document.getElementById('preview-auctions'));">
         <div class="content">
             <h3>Auctions Web Application</h3>
             <ul>
@@ -143,19 +155,20 @@
               <span class="skillTags">Django</span>
               <span class="skillTags">SQLite</span>                
               <span class="skillTags">HTML</span>               
-              <span class="skillTags">CSS</span>          
-              <span class="skillTags">Web</span>
+              <span class="skillTags">CSS</span>      
             </div>
             <a href="https://github.com/b-edward/auctions" target="_blank">
-              <img src="https://storage.googleapis.com/edwardboado.dev/images/github.png" alt="GitHub" id="github-auctions" class="github-project">
+              <img src="https://storage.googleapis.com/edwardboado.dev/images/github.png" 
+              alt="GitHub" id="github-auctions" class="github-project">
             </a>  
         </div>
       </div>
 
-        <!-- Portfolio App -->
+      <!-- Portfolio App -->
       <div class="project">
         <img src="https://storage.googleapis.com/edwardboado.dev/images/logoDark.png" 
-          alt="Portfolio Web Site">
+          alt="Portfolio Web Site" id="preview-portfolio" 
+          onload="PopupImage(document.getElementById('preview-portfolio'));">
         <div class="content">
             <h3>Portfolio Web Site</h3>
             <ul>
@@ -167,11 +180,11 @@
               <span class="skillTags">HTML</span>
               <span class="skillTags">CSS</span>
               <span class="skillTags">JavaScript</span>                
-              <span class="skillTags">GCP</span>               
-              <span class="skillTags">Web</span>
+              <span class="skillTags">GCP</span>         
             </div>
             <a href="https://github.com/b-edward/portfolio" target="_blank">
-              <img src="https://storage.googleapis.com/edwardboado.dev/images/github.png" alt="GitHub" id="github-portfolio" class="github-project">
+              <img src="https://storage.googleapis.com/edwardboado.dev/images/github.png" 
+              alt="GitHub" id="github-portfolio" class="github-project">
             </a>  
         </div>
       </div>
@@ -192,7 +205,8 @@
         <!-- TMS App -->
         <div class="project">
           <img src="https://storage.googleapis.com/edwardboado.dev/images/sqTMS.png"
-            alt="Tranportation Management System">
+            alt="Tranportation Management System" id="preview-tms" 
+            onload="PopupImage(document.getElementById('preview-tms'));">
           <div class="content">
               <h3>Tranportation Management System for Windows</h3>
               <ul>
@@ -211,24 +225,28 @@
                 <span class="skillTags">Unit Test</span>   
                 <span class="skillTags">Integration Test</span>   
                 <span class="skillTags">Azure Boards</span>
+                <span class="skillTags">UML</span>
               </div>
           </div>
         </div>
 
         <!-- Hi-Lo App -->
         <div class="project">
-          <img src="https://storage.googleapis.com/edwardboado.dev/images/hiLo.png" alt=">Hi-Lo Game">
+          <img src="https://storage.googleapis.com/edwardboado.dev/images/hiLo.png" alt="Hi-Lo Game"
+            id="preview-hilo" onload="PopupImage(document.getElementById('preview-hilo'));">
           <div class="content">
               <h3>Hi-Lo Game Web Application</h3>
               <ul>
                 <li>A client-server application that plays a guessing game where application will tell the player if they
                   are too high or too low until they guess the correct number</li>
                 <li>Received a grade of 97%</li>
-                <li><a href="https://hiloserver-eb.azurewebsites.net" target="_blank">Play the game</a> (only desktop size supported)</li>
+                <li><a href="https://hiloserver-eb.azurewebsites.net" target="_blank">Play the game</a> 
+                  (only desktop size supported)</li>
               </ul>              
               <div class="tags"> 
                 <span class="skillTags">C#</span>
-                <span class="skillTags">ASP.NET</span>
+                <span class="skillTags">ASP.NET</span>                
+                <span class="skillTags">HTML</span>
                 <span class="skillTags">CSS</span>
                 <span class="skillTags">Azure App Service</span>      
               </div>
@@ -237,7 +255,8 @@
 
         <!-- Server App -->
         <div class="project">
-          <img src="https://storage.googleapis.com/edwardboado.dev/images/server.png" alt="Server" >
+          <img src="https://storage.googleapis.com/edwardboado.dev/images/server.png" alt="Server" 
+            id="preview-server" onload="PopupImage(document.getElementById('preview-server'));">
           <div class="content">
               <h3>HTTP Web Server</h3>
               <ul>
@@ -257,11 +276,13 @@
 
         <!-- DS/A App -->
         <div class="project">
-          <img src="https://storage.googleapis.com/edwardboado.dev/images/linkedList.png" alt="Movie Information Program">
+          <img src="https://storage.googleapis.com/edwardboado.dev/images/linkedList.png" alt="Movie Information Program" 
+            id="preview-movie" onload="PopupImage(document.getElementById('preview-movie'));">
           <div class="content">
               <h3>Movie Information Program</h3>
               <ul>
-                <li>A console application that took in title, genre, and rating information and stored each movie in doubly-linked lists</li>
+                <li>A console application that took in title, genre, and rating information and stored each movie in 
+                  doubly-linked lists</li>
                 <li>Implemented linked lists, sort, and search algorithms from first principles</li>
                 <li>Received a grade of 100%</li>
               </ul>
@@ -274,16 +295,38 @@
       </div>  
     </div>
 
+
+
+
+
+
+
+    <!-- Large popup image display -->    
+    <img id="image-trigger" src="" style="width:100%;max-width:75%">
+    <div id="image-container" class="popup">
+      <span class="close">&times;</span>
+      <img class="popup-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+
+
+
+
+
+
+
     <!-- About Me section -->
     <div class="aboutSection" id="about">
       <br>
       <h2>ABOUT ME</h2>
       <div class="about-container">
         <div class="about">
-          <div class='row'>
-              <img class='column-picture' src="https://storage.googleapis.com/edwardboado.dev/images/edward.jpg" alt="Picture of Edward Boado">
+          <div class='about-row'>
+              <img class='column-picture' src="https://storage.googleapis.com/edwardboado.dev/images/edward.jpg" 
+              alt="Picture of Edward Boado">
               <div class='column-text'>
-                <h4>Professional / Academic</h4>
+                <h4>Academic</h4>
                 <ul>
                   <li>Available for full time co-op or internships from May 2022 to August 2023</li>
                   <li>2nd year Software Engineering Technology (Co-op) student at Conestoga College in Waterloo, Canada</li>
@@ -291,7 +334,8 @@
                   <li>Active member of the Google Developer Student Club at Conestoga</li>
                   <li>I have a thirst for knowledge and am always learning something new</li>
                   <li>I enjoy challenges and finding creative solutions</li>
-                  <li>Experienced team player with excellent communication, organization, problem solving, and critical thinking skills</li>
+                  <li>Experienced team player with excellent communication, organization, problem solving, and critical thinking 
+                    skills</li>
                 </ul>
                 <h4>Personal</h4>
                 <ul>
@@ -311,16 +355,22 @@
       <h2>CONTACT ME</h2>
       <div class="contact-container">
         <div class="contact">
-          <a href="mailto:edward@edwardboado.dev" target="_blank"><img src="https://storage.googleapis.com/edwardboado.dev/images/email.png" alt="Email"></a>
-          <a href="https://www.instagram.com/ediamz" target="_blank"><img src="https://storage.googleapis.com/edwardboado.dev/images/instagram.png" alt="Instagram"></a>
-          <a href="https://www.linkedin.com/in/edward-boado" target="_blank"><img src="https://storage.googleapis.com/edwardboado.dev/images/linkedin.png" alt="LinkedIn"></a>
-          <a href="https://github.com/b-edward" target="_blank"><img src="https://storage.googleapis.com/edwardboado.dev/images/github.png" alt="GitHub" id="github-contact"></a>        
+          <a href="mailto:edward@edwardboado.dev" target="_blank"><img 
+            src="https://storage.googleapis.com/edwardboado.dev/images/email.png" alt="Email"></a>
+          <a href="https://www.instagram.com/ediamz" target="_blank"><img 
+            src="https://storage.googleapis.com/edwardboado.dev/images/instagram.png" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/in/edward-boado" target="_blank"><img 
+            src="https://storage.googleapis.com/edwardboado.dev/images/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://github.com/b-edward" target="_blank"><img 
+            src="https://storage.googleapis.com/edwardboado.dev/images/github.png" alt="GitHub" id="github-contact"></a>        
         </div>
       </div>
     </div>  
     
     <!-- Link to external javascript file -->
     <script type="text/javascript" src="scripts/main.js"></script>    
+    <script type="text/javascript" src="scripts/imagePopup.js"></script>    
     <!-- <script type="text/javascript" src="https://storage.googleapis.com/edwardboado.dev/scripts/main.js"></script> -->
+    <!-- <script type="text/javascript" src="https://storage.googleapis.com/edwardboado.dev/scripts/imagePopup.js"></script> -->
   </body>
 </html>

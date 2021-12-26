@@ -1,0 +1,78 @@
+/* Styling for projects section */
+.projectSection .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.projectSection .project-container .project {
+    flex:1 1 35rem;
+    overflow: hidden;
+    box-shadow: 0 2rem 2.5rem rgba(0,0,0,.5);
+    margin: 4rem;
+    width: 30%;
+    max-width: 35%;
+}
+
+.projectSection .project-container .project img {
+    width: 100%;
+    height: auto;
+    max-height: 60%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.projectSection .project-container .project img:hover {
+    opacity: 0.5;
+    /*width: 99%;
+    border: 3px solid var(--color-accent-dark); */
+}
+
+.projectSection .project-container .project .content {
+    margin: 1.5rem;
+}
+
+.projectSection .project-container .project .content h3 {
+    font-size: 2.5vh;
+    color:var(--color-text-dark);
+}
+
+.projectSection .project-container .project .content li {
+    font-size: 2.3vh;
+    color:var(--color-text-dark);
+}
+
+.projectSection .project-container .project .content .tags {
+    font-size: 2vh;
+    color:var(--color-text-dark);
+}
+
+.projectSection .project-container .project .content .github-project {    
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 2.5vh;
+}
+
+/* Projects style for medium devices */
+@media screen and (max-width: 1275px) {  
+    .projectSection .project-container .project{
+        flex:1 1 35rem;
+        overflow: hidden;
+        box-shadow: 0 2rem 2.5rem rgba(0,0,0,.5);
+        margin: 2rem;
+        width: 30%;
+        max-width: 40%;
+    }
+
+}
+
+/* Projects style for smaller devices */
+@media screen and (max-width: 750px) {    
+    .projectSection .project-container .project{    
+        margin: 1.5rem;
+        max-width: 85%;
+    }
+
+}
