@@ -55,6 +55,39 @@
     margin-top: 2.5vh;
 }
 
+.tag {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.skillTags {
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.skillTags.language {
+    background-color: rgb(9, 102, 9);
+}
+
+.skillTags.framework {
+    background-color: rgb(221, 74, 20);
+}
+
+.skillTags.database {
+    background-color: rgb(129, 41, 173);
+}
+
+.skillTags.cloud {
+    background-color: rgb(12, 12, 141);
+}
+
+.skillTags.other {
+    background-color: maroon;
+}
+
 /* Projects style for medium devices */
 @media screen and (max-width: 1275px) {  
     .projectSection .project-container .project{
@@ -67,6 +100,7 @@
     }
 
 }
+
 
 /* Projects style for smaller devices */
 @media screen and (max-width: 750px) {    
