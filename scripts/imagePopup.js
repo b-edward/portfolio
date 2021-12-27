@@ -1,29 +1,36 @@
 //
-// Pop up an image for larger view
+//  This file contains code for image viewing popup and scrolling
 //
 
-function PopupImage(img) {
-    // Get the modal
-    var modal = document.getElementById("image-container");
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    //var img = document.getElementById("preview-foodSaver");
-    var modalImg = document.getElementById("img01");
+//
+// Pop up an image for larger view
+//
+function PopupImage(img) {
+    // Get the image container
+    var popup = document.getElementById("image-container");
+
+    // Get the image and caption
+    var imageElement = document.getElementById("img01");
     var captionText = document.getElementById("caption");
+
+    // Display the popup when user clicks on the image
     img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+        popup.style.display = "block";
+        imageElement.src = this.src;
+        captionText.innerHTML = this.alt;
     }
-    // Get the <span> element that closes the modal
+
+    // Get close button element
     var btnClose = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on <span> (x), close the modal
+    // Close the popup when user clicks close button
     btnClose.onclick = function() {
-        modal.style.display = "none";
+        popup.style.display = "none";
     }
 
-    modal.onclick = function() {
-        modal.style.display = "none";
+    // Close the popup when user clicks in the popup background
+    popup.onclick = function() {
+        popup.style.display = "none";
     }
 }

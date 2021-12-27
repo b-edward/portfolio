@@ -1,20 +1,16 @@
+//
+//  This file will handle dynamic resizing of the nav bar and dark theme toggling
+//
+
+
+
 // Global for tracking dark/light mode
 var mode;
 
 // Event listeners for dynamic sizing
 window.addEventListener("resize", ResetNav);
 window.addEventListener("load", ResetNav);
-
-// dark-mode media query matched or not
-let dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-if(dark) {
-  mode = "dark";
-    SetDarkMode();
-}
-else {
-  mode = "light";
-}
+window.addEventListener("load", CheckDark);
 
 //
 // Toggle the nav bar button menu
@@ -53,6 +49,7 @@ function ToggleNav() {
   }
 }
 
+
 //
 // Reset the nav bar after resizing
 //
@@ -86,6 +83,7 @@ function ResetNav() {
   }
 }
 
+
 //
 // Close vertical nav bar
 //
@@ -99,6 +97,25 @@ function CloseNav() {
     ToggleNav();
   } 
 }
+
+//
+//  Check if the user prefers dark mode theme
+//
+function CheckDark() {
+  // Media query for preference
+  let dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  // Update global mode variable
+  if(dark) {
+    mode = "dark";
+      // Set theme to dark if preferred
+      SetDarkMode();
+  }
+  else {
+    mode = "light";
+  }
+}
+
 
 //
 // Change UI to dark mode
