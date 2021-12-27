@@ -5,11 +5,11 @@
 			"name": "foodSaver",
 			"title": "Food Saver Mobile Application",
 			"descriptions": {
-				"item1": "1st Place Prize Winner",
-				"item2": "Group project submission for Condor Hacks Hackathon 2021",
-				"item3": "Project aims to help users track their food in order to reduce food waste and save money",
-				"item4": "Responsible for backend implementation and connecting with Firebase realtime database",
-				"item5": "Responsible for deploying to Google Play Store"
+				"item0": "1st Place Prize Winner",
+				"item1": "Group project submission for Condor Hacks Hackathon 2021",
+				"item2": "Project aims to help users track their food in order to reduce food waste and save money",
+				"item3": "Responsible for backend implementation and connecting with Firebase realtime database",
+				"item4": "Responsible for deploying to Google Play Store"
 			},
 			"skillTags": [
 				{ "type": "language", "name": "C#" },
@@ -22,11 +22,12 @@
 				{ "type": "other", "name": "Hackathon" }
 			],
 			"urls": {
-				"url-github": "https://github.com/b-edward/CondorHacks_Hackathon",
-				"image1-url": "https://storage.googleapis.com/edwardboado.dev/images/foodSaver.png"
+				"github-url": "https://github.com/b-edward/CondorHacks_Hackathon",
+				"image0-url": "https://storage.googleapis.com/edwardboado.dev/images/foodSaver.png"
 			},
 			"image-descriptions": {
-				"image1-description": "Food Saver Logo"
+				"github-description": "Github",
+				"image0-description": "Food Saver Logo"
 			}
 		},		
 		{
@@ -34,11 +35,11 @@
 			"name": "greenify",
 			"title": "Greenify Web Application",
 			"descriptions": {
-				"item1": "Group project submission for Geekfest Hackathon 2021",
-				"item2": "Project aims to gamify carbon footprint tracking to encourage users to make sustainable choices",
-				"item3": "Responsible for coordinating team, teaching MVC design pattern and GitHub version control",
-				"item4": "Created JavaScript functions to control menu interface",
-				"item5": "Presented completed prototype through two rounds of judging"
+				"item0": "Group project submission for Geekfest Hackathon 2021",
+				"item1": "Project aims to gamify carbon footprint tracking to encourage users to make sustainable choices",
+				"item2": "Responsible for coordinating team, teaching MVC design pattern and GitHub version control",
+				"item3": "Created JavaScript functions to control menu interface",
+				"item4": "Presented completed prototype through two rounds of judging"
 			},
 			"skillTags": [
 				{ "type": "language", "name": "HTML" },
@@ -48,11 +49,12 @@
 				{ "type": "other", "name": "Hackathon" }
 			],
 			"urls": {
-				"url-github": "https://github.com/b-edward/Geekfest_Hackathon",
-				"image1-url": "https://storage.googleapis.com/edwardboado.dev/images/greenify.png"
+				"github-url": "https://github.com/b-edward/Geekfest_Hackathon",
+				"image0-url": "https://storage.googleapis.com/edwardboado.dev/images/greenify.png"
 			},
 			"image-descriptions": {
-				"image1-description": "Greenify Web Application Prototype"
+				"github-description": "Github",
+				"image0-description": "Greenify Web Application Prototype"
 			}
 		},
 		{
@@ -60,11 +62,11 @@
 			"name": "studyQuiz",
 			"title": "Study Quiz Windows Application",
 			"descriptions": {
-				"item1": "Individual submission for Google Developer Student Club's Demo Day Competition 2021",
-				"item2": "A quiz program for students to practice for tests and exams",
-				"item3": "Points are timer based, with players and scores tracked to show a leaderboard",
-				"item4": "Server hosted on MS Azure, using a MySQL database",
-				"item5": "Support multiple simultaneous client games"
+				"item0": "Individual submission for Google Developer Student Club's Demo Day Competition 2021",
+				"item1": "A quiz program for students to practice for tests and exams",
+				"item2": "Points are timer based, with players and scores tracked to show a leaderboard",
+				"item3": "Server hosted on MS Azure, using a MySQL database",
+				"item4": "Support multiple simultaneous client games"
 			},
 			"skillTags": [
 				{ "type": "language", "name": "C#" },
@@ -74,11 +76,12 @@
 				{ "type": "cloud", "name": "Azure" }
 			],
 			"urls": {
-				"url-github": "https://github.com/b-edward/DemoDay_StudyQuiz",
-				"image1-url": "https://storage.googleapis.com/edwardboado.dev/images/quiz.png"
+				"github-url": "https://github.com/b-edward/DemoDay_StudyQuiz",
+				"image0-url": "https://storage.googleapis.com/edwardboado.dev/images/quiz.png"
 			},
 			"image-descriptions": {
-				"image1-description": "Food Saver Logo"
+				"github-description": "Github",
+				"image0-description": "Food Saver Logo"
 			}
 		},
 		{
@@ -86,8 +89,8 @@
 			"name": "auctions",
 			"title": "Auctions Web Application",
 			"descriptions": {
-				"item1": "An auction sales site similar to eBay or kijiji",
-				"item2": "Users can create an account to post items for sale, as well as bid on items already listed"
+				"item0": "An auction sales site similar to eBay or kijiji",
+				"item1": "Users can create an account to post items for sale, as well as bid on items already listed"
 			},
 			"skillTags": [
 				{ "type": "language", "name": "Python" },
@@ -97,11 +100,12 @@
 				{ "type": "language", "name": "CSS" }
 			],
 			"urls": {
-				"url-github": "https://github.com/b-edward/auctions",
-				"image1-url": "https://storage.googleapis.com/edwardboado.dev/images/auctions.png"
+				"github-url": "https://github.com/b-edward/auctions",
+				"image0-url": "https://storage.googleapis.com/edwardboado.dev/images/auctions.png"
 			},
 			"image-descriptions": {
-				"image1-description": "Auctions Web Application"
+				"github-description": "Github",
+				"image0-description": "Auctions Web Application"
 			}
 		},
 		{
@@ -109,11 +113,11 @@
 			"name": "portfolio",
 			"title": "Portfolio Web Site",
 			"descriptions": {
-				"item1": "Single Page Application to highlight relevant projects",
-				"item2": "Utilizes JavaScript fetch method for dynamic loading of project data",
-				"item3": "Supports dynamic dark/light theme on load",
-				"item4": "Front-end created with only HTML5, CSS3, and JavaScript ES6",
-				"item5": "Hosted on Google Cloud Platform"
+				"item0": "Single Page Application to highlight relevant projects",
+				"item1": "Utilizes JavaScript fetch method for dynamic loading of project data",
+				"item2": "Supports dynamic dark/light theme on load",
+				"item3": "Front-end created with only HTML5, CSS3, and JavaScript ES6",
+				"item4": "Hosted on Google Cloud Platform"
 			},
 			"skillTags": [
 				{ "type": "language", "name": "HTML" },
@@ -123,11 +127,12 @@
 				{ "type": "cloud", "name": "GCP" }
 			],
 			"urls": {
-				"url-github": "https://github.com/b-edward/portfolio",
-				"image1-url": "https://storage.googleapis.com/edwardboado.dev/images/logoDark.png"
+				"github-url": "https://github.com/b-edward/portfolio",
+				"image0-url": "https://storage.googleapis.com/edwardboado.dev/images/logoDark.png"
 			},
 			"image-descriptions": {
-				"image1-description": "Portfolio Web Site"
+				"github-description": "Github",
+				"image0-description": "Portfolio Web Site"
 			}
 		}
 	]

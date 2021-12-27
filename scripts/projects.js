@@ -2,73 +2,77 @@
 //  This file will handle dynamic creation of project cards
 //
 
+// Listen for page load
 window.addEventListener("load", LoadProjects);
 
 
-// async function GetProjects(url) {
-
-//     const header = {
-//         method: 'GET',
-//         accept: 'application/json',
-//         mode: 'no-cors',
-//         cache: 'default',
-//         'Access-Control-Allow-Origin': '*', 
-//         'Access-Control-Allow-Credentials': true 
-//     };
-
-//     const httpRequest = new Request(url, header);
-
-//     try {
-//         // Try to get the url 
-//         const response = await fetch(httpRequest);
-        
-//         // If the response is not 200 range, throw exception
-//         // if (!response.ok) {
-//         //     throw Error(`${response.status} ${response.statusText}`);
-//         // }
-//         // Return the response
-//         return response;
-//     } catch (error) {
-//         console.log("Error fetching: ", error);
-//     }
-// }  
-
-async function LoadProjects() {
-
-    fetch('https://storage.googleapis.com/edwardboado.dev/data/projects.json', {
+//
+// Load the project data from firebase realtime database
+//
+function LoadProjects() {
+    // Send GET request to the firebase API
+    fetch('https://portfolio-336001-default-rtdb.firebaseio.com/projects.json', {
         method: 'GET',        
         accept: 'application/json',
-        mode: 'no-cors',
     })
     .then(function(response) {
-      if (!response.ok) {
-        throw new Error(response.ok);
-      }
-      return response.json();
+        // Check that the response is in 200 range
+        if (!response.ok) {
+            throw new Error(response.statusText);
+        }
+        // Return promise as json data
+        return response.json();
+    })
+    .then(function(data) {
+        // Call function to generate html content, sending json data 
+        GenerateProjectContent(data);
     })
     .catch(function(error) {
+        // Log any errors
         console.log(error);
     });
-
-
-
-
-    // fetch('https://storage.googleapis.com/edwardboado.dev/data/projects.json', {
-    //     method: 'GET',        
-    //     accept: 'application/json',
-    //     mode: 'no-cors',
-    //     cache: 'default',
-    //     'Access-Control-Allow-Origin': '*', 
-    //     'Access-Control-Allow-Credentials': true 
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //     console.log(data.projects.name);
-    // })      
-    // .catch(console.error);
-
-
 }
 
 
+//
+//  Take the json data and generate the html project card content
+//
+function GenerateProjectContent(data){
+    const projects = data;
+    
+    let personalProjects = document.getElementById("projects-personal");
+    let schoolProjects = document.getElementById("projects-school");
 
+    var cardContent = '';
+
+
+    const AppendContent = projects => {
+        // Create elements needed to build a card
+        const div = document.createElement("div");
+        const h3 = document.createElement("h3");
+        const p = document.createElement("p");
+        // Set content and attributes
+        h3.innerHTML = projects.title;
+        p.classList.add("content")
+        p.innerHTML = projects.name;
+        // Append newly created elements into the DOM
+        personalProjects.append(div);
+        div.append(h3);
+        div.append(p);
+        div.classList.add("project");
+        div.style.backgroundColor = "blue";
+    };
+      
+    data.forEach(projects => AppendContent(projects));
+      
+}
+
+// Create class style 
+
+// var style = document.createElement('style');
+// style.type = 'text/css';
+// style.innerHTML = '.cssClass { color: #F00; }';
+// document.getElementsByTagName('head')[0].appendChild(style);
+
+// Add the class
+// document.getElementById('someElementId').className = 'cssClass';
