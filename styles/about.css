@@ -31,7 +31,7 @@
     flex: 1;
   }
 
-  .column-text {
+  .aboutInfo {
     height: auto;
     padding: 2%;
     display: flex;
@@ -40,3 +40,52 @@
     flex: 2;
     font-size: 2.3vh;
   } 
+
+  #btnResume {
+    background-color: #004aad;
+    border: none;
+    color: white;
+    padding: 1.5vh 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.3vh;
+    margin: 5vh 0;    
+  } 
+
+  #btnResume:hover {
+    background-color: #38b6ff;
+  }
+
+  #formResume {    
+    width: 10vw;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+    margin:auto;
+  }
+
+  
+/* Nav style for medium devices */
+@media screen and (max-width: 1000px) {      
+  #formResume {    
+    width: 15vw;
+  }
+}
+
+  /* About style for small devices */
+@media screen and (max-width: 750px) {   
+  #formResume {    
+    width: 20vw;
+  }
+}
+
+  /* About style for extra small devices */
+  @media screen and (max-width: 400px) {   
+    #formResume {    
+      width: 25vw;
+    }
+  }

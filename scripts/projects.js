@@ -47,6 +47,7 @@ function GenerateProjectContent(data){
     for (let i = 0; i < projects.length; i++) {
         let cardContent = "";
 
+        // Start building the card's contents string header
         cardContent +=
         `   <!-- ${projects[i].title} -->
             <div class="project">
@@ -57,6 +58,7 @@ function GenerateProjectContent(data){
                     <h3>${projects[i].title}</h3>
                     <ul class="detailsList">`;
 
+        // Append the description details list
         for (let j = 0; j < projects[i].details.length; j++) {
             cardContent += `<li>${projects[i].details[j].text}</li>`;
         }                
@@ -64,33 +66,43 @@ function GenerateProjectContent(data){
         cardContent += `</ul>
                         <div class="tags">`;
 
+        // Append the skill tags
         for (let k = 0; k < projects[i].skillTags.length; k++) {
             cardContent += `<div class="skillTags ${projects[i].skillTags[k].type}">${projects[i].skillTags[k].name}</div>`;
         }
 
-        let githubLogo = "https://storage.googleapis.com/edwardboado.dev/images/github.png";
-        if(mode == "dark") {
-            githubLogo = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
-        }
-        
-        cardContent += `
-                    </div>                
-                    <a href="${projects[i].urls[0].url}" target="_blank">
-                        <img src="${githubLogo}" 
-                        alt="GitHub" id="github-${projects[i].name}" class="github-project">
-                    </a>  
-                </div>
-            </div>`;
+
 
         // Check if it's a personal project
         if (projects[i].type == "personal") {
-            // Add the cards to the personal project container
+            // Select the github logo to append based on dark or light mode theme
+            let githubLogo = "https://storage.googleapis.com/edwardboado.dev/images/github.png";
+            if(mode == "dark") {
+                githubLogo = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
+            }
+            
+            // Append the github logo and link to repo
+            cardContent += `
+                        </div>                
+                        <a href="${projects[i].urls[0].url}" target="_blank">
+                            <img src="${githubLogo}" 
+                            alt="GitHub" id="github-${projects[i].name}" class="github-project">
+                        </a>  
+                    </div>
+                </div>`;
+
+            // Add the card to the personal project container
             personalProjects.innerHTML += cardContent;
-            console.log("personal");
+
         } else if (projects[i].type == "school") {
-            // Else it goes in school project container
+            // No public github repo due to academic integrity policies
+            cardContent += `
+                        </div>                                   
+                    </div>
+                </div>`;
+
+            // Add the card to the school projects container
             schoolProjects.innerHTML += cardContent;
-            console.log("school");
         }
     }
 }

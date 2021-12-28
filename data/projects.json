@@ -6,8 +6,8 @@
 			"title": "Food Saver Mobile Application",
 			"details": [
 				{ "line": "0", "text": "1st Place Prize Winner"},
-				{ "line": "1", "text": "Group project submission for Condor Hacks Hackathon 2021"},
-				{ "line": "2", "text": "Project aims to help users track their food in order to reduce food waste and save money"},
+				{ "line": "1", "text": "Partner-project submission for Condor Hacks Hackathon 2021"},
+				{ "line": "2", "text": "Food Saver aims to help users track their food in order to reduce food waste and save money"},
 				{ "line": "3", "text": "Responsible for backend implementation and connecting with Firebase realtime database"},
 				{ "line": "4", "text": "Responsible for deploying to Google Play Store"}
 			],
@@ -15,7 +15,7 @@
 				{ "type": "language", "name": "C#" },
 				{ "type": "framework", "name": ".NET" },
 				{ "type": "framework", "name": "Xamarin" },
-				{ "type": "cloud", "name": "GCP" },
+				{ "type": "cloud", "name": "Google Cloud Platform" },
 				{ "type": "cloud", "name": "Firebase" },
 				{ "type": "database", "name": "NoSQL" },
 				{ "type": "other", "name": "Android" },
@@ -35,9 +35,9 @@
 			"name": "greenify",
 			"title": "Greenify Web Application",
 			"details": [
-				{ "line": "0", "text": "Group project submission for Geekfest Hackathon 2021"},
+				{ "line": "0", "text": "Team project submission for Geekfest Hackathon 2021 (4 students)"},
 				{ "line": "1", "text": "Project aims to gamify carbon footprint tracking to encourage users to make sustainable choices"},
-				{ "line": "2", "text": "Responsible for coordinating team, teaching MVC design pattern and GitHub version control"},
+				{ "line": "2", "text": "Responsible for coordinating the team, teaching MVC design pattern and GitHub version control"},
 				{ "line": "3", "text": "Created JavaScript functions to control menu interface"},
 				{ "line": "4", "text": "Presented completed prototype through two rounds of judging"}
 			],
@@ -65,23 +65,23 @@
 				{ "line": "0", "text": "Individual submission for Google Developer Student Club's Demo Day Competition 2021"},
 				{ "line": "1", "text": "A quiz program for students to practice for tests and exams"},
 				{ "line": "2", "text": "Points are timer based, with players and scores tracked to show a leaderboard"},
-				{ "line": "3", "text": "Server hosted on MS Azure, using a MySQL database"},
-				{ "line": "4", "text": "Support multiple simultaneous client games"}
+				{ "line": "3", "text": "Server hosted on MS Azure Virtual Machine, using a MySQL database"},
+				{ "line": "4", "text": "Supports multiple simultaneous client games"}
 			],
 			"skillTags": [
 				{ "type": "language", "name": "C#" },
 				{ "type": "framework", "name": ".NET" },
 				{ "type": "framework", "name": "WPF" },
 				{ "type": "database", "name": "MySQL" },
-				{ "type": "cloud", "name": "Azure" }
+				{ "type": "cloud", "name": "Azure Virtual Machine" }
 			],
 			"urls": [
-				{"github-url": "https://github.com/b-edward/DemoDay_StudyQuiz"},
-				{"image0-url": "https://storage.googleapis.com/edwardboado.dev/images/studyQuiz.png"}
+				{"url": "https://github.com/b-edward/DemoDay_StudyQuiz"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/studyQuiz.png"}
 			],
 			"imageDescriptions": [
 				{"description": "Github"},
-				{"description": "Food Saver Logo"}
+				{"description": "Study Quiz Game Play"}
 			]
 		},
 		{
@@ -114,8 +114,8 @@
 			"title": "Portfolio Web Site",
 			"details": [
 				{ "line": "0", "text": "Single Page Application to highlight relevant projects"},
-				{ "line": "1", "text": "Utilizes JavaScript fetch method for dynamic loading of project data"},
-				{ "line": "2", "text": "Supports dynamic dark/light theme on load"},
+				{ "line": "1", "text": "Utilizes JavaScript fetch method for dynamic loading of project data from Firebase realtime database"},
+				{ "line": "2", "text": "Supports dynamic dark/light theme on load, and dynamic resizing"},
 				{ "line": "3", "text": "Front-end created with only HTML5, CSS3, and JavaScript ES6"},
 				{ "line": "4", "text": "Hosted on Google Cloud Platform"}
 			],
@@ -123,8 +123,10 @@
 				{ "type": "language", "name": "HTML" },
 				{ "type": "language", "name": "CSS" },
 				{ "type": "language", "name": "JavaScript" },
-				{ "type": "language", "name": "CSS" },
-				{ "type": "cloud", "name": "GCP" }
+				{ "type": "database", "name": "NoSQL" },
+				{ "type": "cloud", "name": "Google Cloud Platform" },
+				{ "type": "cloud", "name": "Firebase" },
+				{ "type": "cloud", "name": "Cloud Storage" }
 			],
 			"urls": [
 				{"url": "https://github.com/b-edward/portfolio"},
@@ -132,7 +134,134 @@
 			],
 			"imageDescriptions": [
 				{"description": "Github"},
-				{"description": "Portfolio Web Site"}
+				{"description": "Portfolio Web Site Logo"}
+			]
+		},
+		{
+			"type": "school",
+			"name": "tms",
+			"title": "Tranportation Management System for Windows",
+			"details": [
+				{ "line": "0", "text": "Term Project completed with a team of 4 students using Agile/Scrum methodology"},
+				{ "line": "1", "text": "A commercial application for a logistics company to take transport contracts, hire drivers, track deliveries, and invoice the customer"},
+				{ "line": "2", "text": "Responsible for implementing Buyer subsystem to obtain contracts, process invoices, Admin subsystem to change system settings, and logging functionality"},
+				{ "line": "3", "text": "Implemented automated unit test coverage for relevant code sections (blackbox and whitebox testing), as well as manual UI testing"},
+				{ "line": "4", "text": "Systems utilizes TCP/IP sockets to connect with external API as well as internal MySQL database"},
+				{ "line": "5", "text": "After a successful demo, our project received a grade of 95%"}
+			],
+			"skillTags": [
+				{ "type": "language", "name": "C#" },
+				{ "type": "framework", "name": ".NET" },
+				{ "type": "database", "name": "MySQL" },
+				{ "type": "cloud", "name": "Azure Boards"},
+				{ "type": "other", "name": "Agile" },
+				{ "type": "other", "name": "Scrum" },
+				{ "type": "other", "name": "TDD" },
+				{ "type": "other", "name": "Unit Test" },
+				{ "type": "other", "name": "Integration Test" },
+				{ "type": "other", "name": "UML" }
+			],
+			"urls": [
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/tms.png"}
+			],
+			"imageDescriptions": [
+				{"description": "TMS Login Page"}
+			]
+		},
+		{
+			"type": "school",
+			"name": "hiLo",
+			"title": "Hi-Lo Game Web Application",
+			"details": [
+				{ "line": "0", "text": "A client-server application that plays a guessing game where application will tell the player if they are too high or too low until they guess the correct number"},
+				{ "line": "1", "text": "Created with ASP.NET and hosted on Azure App Service"},
+				{ "line": "2", "text": "<a href='https://hiloserver-eb.azurewebsites.net' target='_blank'>Play the game</a> (full screen required)"},
+				{ "line": "3", "text": "Received a grade of 97%"}
+			],
+			"skillTags": [
+				{ "type": "language", "name": "C#" },
+				{ "type": "language", "name": "HTML" },
+				{ "type": "language", "name": "CSS" },
+				{ "type": "framework", "name": "ASP.NET" },
+				{ "type": "database", "name": "MySQL" },
+				{ "type": "cloud", "name": "Azure App Service"},
+				{ "type": "other", "name": "Unit Test" }
+			],
+			"urls": [
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/hiLo.png"}
+			],
+			"imageDescriptions": [
+				{"description": "Hi-Lo Gameplay"}
+			]
+		},
+		{
+			"type": "school",
+			"name": "server",
+			"title": "HTTP Web Server",
+			"details": [
+				{ "line": "0", "text": "Created a RESTful web server that responds to TCP/IP requests using the HTTP protocol"},
+				{ "line": "1", "text": "Parses requests and creates response according to the HTTP message protocol used between a browser and a web server"}
+			],
+			"skillTags": [
+				{ "type": "language", "name": "C#" },
+				{ "type": "framework", "name": ".NET" },
+				{ "type": "other", "name": "HTTP" },
+				{ "type": "other", "name": "REST" },
+				{ "type": "other", "name": "API" },
+				{ "type": "other", "name": "IIS" }
+			],
+			"urls": [
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/server.png"}
+			],
+			"imageDescriptions": [
+				{"description": "HTTP testing tool showing GET request and Server's response"}
+			]
+		},
+		{
+			"type": "school",
+			"name": "textEditor",
+			"title": "Text Editor Web Application",
+			"details": [
+				{ "line": "0", "text": "A partner-based project that uses jQuery AJAX calls to simulate a 'Captain's Log' online text editor"},
+				{ "line": "1", "text": "Modeled on the Star Trek computer screens, this editor allows users to create, read, and update a log entry online"},
+				{ "line": "2", "text": "Logs are transferred in JSON format and parsed by the server, which creates, reads and writes to a local text file"},
+				{ "line": "3", "text": "Received a grade of 100%"}
+			],
+			"skillTags": [
+				{ "type": "language", "name": "C#" },
+				{ "type": "language", "name": "HTML" },
+				{ "type": "language", "name": "CSS" },
+				{ "type": "language", "name": "JavaScript" },
+				{ "type": "framework", "name": "ASP.NET" },
+				{ "type": "framework", "name": "jQuery" },
+				{ "type": "other", "name": "AJAX" },
+				{ "type": "other", "name": "IIS" }
+			],
+			"urls": [
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/textEditor.png"}
+			],
+			"imageDescriptions": [
+				{"description": "The text editing area user interface"}
+			]
+		},
+		{
+			"type": "school",
+			"name": "movie",
+			"title": "Movie Information Program",
+			"details": [
+				{ "line": "0", "text": "A console application that took in title, genre, and rating information and stored each movie in doubly-linked lists"},
+				{ "line": "1", "text": "Implemented linked lists, sort, and search algorithms from first principles (no libraries allowed)"},
+				{ "line": "2", "text": "Received a grade of 100"}
+			],
+			"skillTags": [
+				{ "type": "language", "name": "C" },
+				{ "type": "language", "name": "C++" }
+			],
+			"urls": [
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/movie.png"}
+			],
+			"imageDescriptions": [
+				{"description": "Code snippet - inserting a node into a doubly linked list"}
 			]
 		}
 	]

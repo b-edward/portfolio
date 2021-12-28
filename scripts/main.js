@@ -3,7 +3,6 @@
 //
 
 
-
 // Global for tracking dark/light mode
 var mode = "light";
 
@@ -82,7 +81,7 @@ function ResetNav() {
   // disable slide animation
   nav.style.transitionDuration = "0ms";
 
-  // Set up for large and small screens
+  // Set up for large screens
   if(width > 750) {
     if(mode == "light") {
       navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navX.png";
@@ -92,6 +91,7 @@ function ResetNav() {
     }
     nav.style.right = "0";
   }
+  // Set up for large screens
   else if(width < 750) {
     if(mode == "light") {
       navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButton.png";
@@ -136,16 +136,12 @@ function SetDarkMode() {
   document.documentElement.style.setProperty("--color-header-background-dark", "232323");
   document.documentElement.style.setProperty("--color-header-text-light", "white");
   document.documentElement.style.setProperty("--color-header-text-dark", "#ccc");
+  document.documentElement.style.setProperty("--color-title", "#004aad");
 
   // Get elements from DOM
   var navButton = document.getElementById('navImage');
   var logo = document.getElementById('logo');
   var github = document.getElementById('github-contact');
-  var githubFoodSaver = document.getElementById('github-foodSaver');
-  var githubGreenify = document.getElementById('github-greenify');
-  var githubStudyQuiz = document.getElementById('github-studyQuiz');
-  var githubAuctions = document.getElementById('github-auctions');
-  var githubPortfolio = document.getElementById('github-portfolio');
 
   // Update elements
   navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButtonDark.png";

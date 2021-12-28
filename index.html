@@ -41,9 +41,9 @@
 
         <!-- Home image -->
         <div id="home">
-        <div id="logo-container">
-            <img id="logo" alt="Page Logo" src="https://storage.googleapis.com/edwardboado.dev/images/logoLight.png">
-        </div>
+            <div id="logo-container">
+                <img id="logo" alt="Page Logo" src="https://storage.googleapis.com/edwardboado.dev/images/logoLight.png">
+            </div>
         </div>
 
         <!-- Projects section -->
@@ -55,7 +55,6 @@
                     <!-- Dynamically generated personal project info cards -->
                 </div>
             </div>
-
             <div id="projects-school" class="projects-school">
                 <br>
                 <h2>SCHOOL PROJECTS</h2>
@@ -80,19 +79,29 @@
             <div class="about-container">
                 <div class="about">
                     <div class='about-row'>
-                        <img class='column-picture' src="https://storage.googleapis.com/edwardboado.dev/images/edward.jpg" 
-                        alt="Picture of Edward Boado">
-                        <div class='column-text'>
+                        <div class="aboutLink">
+                            <!-- My picture -->
+                            <img class='column-picture' src="https://storage.googleapis.com/edwardboado.dev/images/edward.jpg" 
+                            alt="Picture of Edward Boado">
+                            <!-- My resume -->
+                            <form action="https://storage.googleapis.com/edwardboado.dev/resume/Edward-Boado-Resume.pdf" 
+                                target="_blank" id="formResume">
+                                <input type="submit" value="Resume" id="btnResume"/>
+                            </form>
+                        </div>
+                        <div class='aboutInfo'>
+                            <!-- School and extra-curricular info -->
                             <h4>Academic</h4>
                             <ul>
                                 <li>Available for full time co-op or internships from May 2022 to August 2023</li>
                                 <li>2nd year Software Engineering Technology (Co-op) student at Conestoga College in Waterloo, Canada</li>
-                                <li>Maintained 4.0 GPA first year, and 3.99 second year</li>
+                                <li>Achieved 4.0 GPA first year, and 3.99 second year</li>
                                 <li>Active member of the Google Developer Student Club at Conestoga</li>
                                 <li>Loves learning and finding creative ways to solve challenges</li>
                                 <li>Experienced team player with excellent communication, organization, problem solving, and critical thinking 
                                     skills</li>
                             </ul>
+                            <!-- Personal info -->
                             <h4>Personal</h4>
                             <ul>
                                 <li>In my spare time I enjoy attending workshops and hackathon challanges, and working on personal projects</li>
@@ -111,12 +120,15 @@
             <h2>CONTACT ME</h2>
             <div class="contact-container">
                 <div class="contact">
+                <!-- Email -->
                 <a href="mailto:edward@edwardboado.dev" target="_blank"><img 
                     src="https://storage.googleapis.com/edwardboado.dev/images/email.png" alt="Email"></a>
+                <!-- Social -->
                 <a href="https://www.instagram.com/ediamz" target="_blank"><img 
                     src="https://storage.googleapis.com/edwardboado.dev/images/instagram.png" alt="Instagram"></a>
                 <a href="https://www.linkedin.com/in/edward-boado" target="_blank"><img 
                     src="https://storage.googleapis.com/edwardboado.dev/images/linkedin.png" alt="LinkedIn"></a>
+                <!-- GitHub -->
                 <a href="https://github.com/b-edward" target="_blank"><img 
                     src="https://storage.googleapis.com/edwardboado.dev/images/github.png" alt="GitHub" id="github-contact"></a>        
                 </div>
