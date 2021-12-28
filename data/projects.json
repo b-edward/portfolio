@@ -4,13 +4,13 @@
 			"type": "personal",
 			"name": "foodSaver",
 			"title": "Food Saver Mobile Application",
-			"descriptions": {
-				"item0": "1st Place Prize Winner",
-				"item1": "Group project submission for Condor Hacks Hackathon 2021",
-				"item2": "Project aims to help users track their food in order to reduce food waste and save money",
-				"item3": "Responsible for backend implementation and connecting with Firebase realtime database",
-				"item4": "Responsible for deploying to Google Play Store"
-			},
+			"details": [
+				{ "line": "0", "text": "1st Place Prize Winner"},
+				{ "line": "1", "text": "Group project submission for Condor Hacks Hackathon 2021"},
+				{ "line": "2", "text": "Project aims to help users track their food in order to reduce food waste and save money"},
+				{ "line": "3", "text": "Responsible for backend implementation and connecting with Firebase realtime database"},
+				{ "line": "4", "text": "Responsible for deploying to Google Play Store"}
+			],
 			"skillTags": [
 				{ "type": "language", "name": "C#" },
 				{ "type": "framework", "name": ".NET" },
@@ -21,26 +21,26 @@
 				{ "type": "other", "name": "Android" },
 				{ "type": "other", "name": "Hackathon" }
 			],
-			"urls": {
-				"github-url": "https://github.com/b-edward/CondorHacks_Hackathon",
-				"image0-url": "https://storage.googleapis.com/edwardboado.dev/images/foodSaver.png"
-			},
-			"image-descriptions": {
-				"github-description": "Github",
-				"image0-description": "Food Saver Logo"
-			}
-		},		
+			"urls": [
+				{"url": "https://github.com/b-edward/CondorHacks_Hackathon"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/foodSaver.png"}
+			],
+			"imageDescriptions": [
+				{"description": "Github"},
+				{"description": "Food Saver Logo"}
+			]
+		},
 		{
 			"type": "personal",
 			"name": "greenify",
 			"title": "Greenify Web Application",
-			"descriptions": {
-				"item0": "Group project submission for Geekfest Hackathon 2021",
-				"item1": "Project aims to gamify carbon footprint tracking to encourage users to make sustainable choices",
-				"item2": "Responsible for coordinating team, teaching MVC design pattern and GitHub version control",
-				"item3": "Created JavaScript functions to control menu interface",
-				"item4": "Presented completed prototype through two rounds of judging"
-			},
+			"details": [
+				{ "line": "0", "text": "Group project submission for Geekfest Hackathon 2021"},
+				{ "line": "1", "text": "Project aims to gamify carbon footprint tracking to encourage users to make sustainable choices"},
+				{ "line": "2", "text": "Responsible for coordinating team, teaching MVC design pattern and GitHub version control"},
+				{ "line": "3", "text": "Created JavaScript functions to control menu interface"},
+				{ "line": "4", "text": "Presented completed prototype through two rounds of judging"}
+			],
 			"skillTags": [
 				{ "type": "language", "name": "HTML" },
 				{ "type": "language", "name": "CSS" },
@@ -48,26 +48,26 @@
 				{ "type": "framework", "name": "jQuery" },
 				{ "type": "other", "name": "Hackathon" }
 			],
-			"urls": {
-				"github-url": "https://github.com/b-edward/Geekfest_Hackathon",
-				"image0-url": "https://storage.googleapis.com/edwardboado.dev/images/greenify.png"
-			},
-			"image-descriptions": {
-				"github-description": "Github",
-				"image0-description": "Greenify Web Application Prototype"
-			}
+			"urls": [
+				{"url": "https://github.com/b-edward/Geekfest_Hackathon"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/greenify.png"}
+			],
+			"imageDescriptions": [
+				{"description": "Github"},
+				{"description": "Greenify Web Application Prototype"}
+			]
 		},
 		{
 			"type": "personal",
 			"name": "studyQuiz",
 			"title": "Study Quiz Windows Application",
-			"descriptions": {
-				"item0": "Individual submission for Google Developer Student Club's Demo Day Competition 2021",
-				"item1": "A quiz program for students to practice for tests and exams",
-				"item2": "Points are timer based, with players and scores tracked to show a leaderboard",
-				"item3": "Server hosted on MS Azure, using a MySQL database",
-				"item4": "Support multiple simultaneous client games"
-			},
+			"details": [
+				{ "line": "0", "text": "Individual submission for Google Developer Student Club's Demo Day Competition 2021"},
+				{ "line": "1", "text": "A quiz program for students to practice for tests and exams"},
+				{ "line": "2", "text": "Points are timer based, with players and scores tracked to show a leaderboard"},
+				{ "line": "3", "text": "Server hosted on MS Azure, using a MySQL database"},
+				{ "line": "4", "text": "Support multiple simultaneous client games"}
+			],
 			"skillTags": [
 				{ "type": "language", "name": "C#" },
 				{ "type": "framework", "name": ".NET" },
@@ -75,23 +75,23 @@
 				{ "type": "database", "name": "MySQL" },
 				{ "type": "cloud", "name": "Azure" }
 			],
-			"urls": {
-				"github-url": "https://github.com/b-edward/DemoDay_StudyQuiz",
-				"image0-url": "https://storage.googleapis.com/edwardboado.dev/images/quiz.png"
-			},
-			"image-descriptions": {
-				"github-description": "Github",
-				"image0-description": "Food Saver Logo"
-			}
+			"urls": [
+				{"github-url": "https://github.com/b-edward/DemoDay_StudyQuiz"},
+				{"image0-url": "https://storage.googleapis.com/edwardboado.dev/images/studyQuiz.png"}
+			],
+			"imageDescriptions": [
+				{"description": "Github"},
+				{"description": "Food Saver Logo"}
+			]
 		},
 		{
 			"type": "personal",
 			"name": "auctions",
 			"title": "Auctions Web Application",
-			"descriptions": {
-				"item0": "An auction sales site similar to eBay or kijiji",
-				"item1": "Users can create an account to post items for sale, as well as bid on items already listed"
-			},
+			"details": [
+				{ "line": 0, "text": "An auction sales site similar to eBay or kijiji"},
+				{ "line": 1, "text": "Users can create an account to post items for sale, as well as bid on items already listed"}
+			],
 			"skillTags": [
 				{ "type": "language", "name": "Python" },
 				{ "type": "framework", "name": "Django" },
@@ -99,26 +99,26 @@
 				{ "type": "language", "name": "HTML" },
 				{ "type": "language", "name": "CSS" }
 			],
-			"urls": {
-				"github-url": "https://github.com/b-edward/auctions",
-				"image0-url": "https://storage.googleapis.com/edwardboado.dev/images/auctions.png"
-			},
-			"image-descriptions": {
-				"github-description": "Github",
-				"image0-description": "Auctions Web Application"
-			}
+			"urls": [
+				{"url": "https://github.com/b-edward/auctions"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/auctions.png"}
+			],
+			"imageDescriptions": [
+				{"description": "Github"},
+				{"description": "Auctions Web Application"}
+			]
 		},
 		{
 			"type": "personal",
 			"name": "portfolio",
 			"title": "Portfolio Web Site",
-			"descriptions": {
-				"item0": "Single Page Application to highlight relevant projects",
-				"item1": "Utilizes JavaScript fetch method for dynamic loading of project data",
-				"item2": "Supports dynamic dark/light theme on load",
-				"item3": "Front-end created with only HTML5, CSS3, and JavaScript ES6",
-				"item4": "Hosted on Google Cloud Platform"
-			},
+			"details": [
+				{ "line": "0", "text": "Single Page Application to highlight relevant projects"},
+				{ "line": "1", "text": "Utilizes JavaScript fetch method for dynamic loading of project data"},
+				{ "line": "2", "text": "Supports dynamic dark/light theme on load"},
+				{ "line": "3", "text": "Front-end created with only HTML5, CSS3, and JavaScript ES6"},
+				{ "line": "4", "text": "Hosted on Google Cloud Platform"}
+			],
 			"skillTags": [
 				{ "type": "language", "name": "HTML" },
 				{ "type": "language", "name": "CSS" },
@@ -126,14 +126,14 @@
 				{ "type": "language", "name": "CSS" },
 				{ "type": "cloud", "name": "GCP" }
 			],
-			"urls": {
-				"github-url": "https://github.com/b-edward/portfolio",
-				"image0-url": "https://storage.googleapis.com/edwardboado.dev/images/logoDark.png"
-			},
-			"image-descriptions": {
-				"github-description": "Github",
-				"image0-description": "Portfolio Web Site"
-			}
+			"urls": [
+				{"url": "https://github.com/b-edward/portfolio"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/logoDark.png"}
+			],
+			"imageDescriptions": [
+				{"description": "Github"},
+				{"description": "Portfolio Web Site"}
+			]
 		}
 	]
 }

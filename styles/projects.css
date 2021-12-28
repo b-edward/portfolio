@@ -68,23 +68,23 @@
 }
 
 .skillTags.language {
-    background-color: rgb(9, 102, 9);
+    background-color: #4652fd;
 }
 
 .skillTags.framework {
-    background-color: rgb(221, 74, 20);
+    background-color: #e0a502;
 }
 
 .skillTags.database {
-    background-color: rgb(129, 41, 173);
+    background-color: #0F9D58;
 }
 
 .skillTags.cloud {
-    background-color: rgb(12, 12, 141);
+    background-color: #008ce9;
 }
 
 .skillTags.other {
-    background-color: maroon;
+    background-color: #F77737;
 }
 
 /* Projects style for medium devices */

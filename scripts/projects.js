@@ -20,7 +20,7 @@ function LoadProjects() {
         if (!response.ok) {
             throw new Error(response.statusText);
         }
-        // Return promise as json data
+        // Return promise as json data object
         return response.json();
     })
     .then(function(data) {
@@ -40,39 +40,57 @@ function LoadProjects() {
 function GenerateProjectContent(data){
     const projects = data;
     
-    let personalProjects = document.getElementById("projects-personal");
-    let schoolProjects = document.getElementById("projects-school");
+    let personalProjects = document.getElementById("personal");
+    let schoolProjects = document.getElementById("school");
 
-    var cardContent = '';
+    // Iterate through the projects one by one
+    for (let i = 0; i < projects.length; i++) {
+        let cardContent = "";
 
+        cardContent +=
+        `   <!-- ${projects[i].title} -->
+            <div class="project">
+                <img src="https://storage.googleapis.com/edwardboado.dev/images/${projects[i].name}.png"
+                    alt="${projects[i].title}" id="image-${projects[i].name}" 
+                    onload="PopupImage(document.getElementById('image-${projects[i].name}'));">
+                <div class="content">
+                    <h3>${projects[i].title}</h3>
+                    <ul class="detailsList">`;
 
-    const AppendContent = projects => {
-        // Create elements needed to build a card
-        const div = document.createElement("div");
-        const h3 = document.createElement("h3");
-        const p = document.createElement("p");
-        // Set content and attributes
-        h3.innerHTML = projects.title;
-        p.classList.add("content")
-        p.innerHTML = projects.name;
-        // Append newly created elements into the DOM
-        personalProjects.append(div);
-        div.append(h3);
-        div.append(p);
-        div.classList.add("project");
-        div.style.backgroundColor = "blue";
-    };
-      
-    data.forEach(projects => AppendContent(projects));
-      
+        for (let j = 0; j < projects[i].details.length; j++) {
+            cardContent += `<li>${projects[i].details[j].text}</li>`;
+        }                
+
+        cardContent += `</ul>
+                        <div class="tags">`;
+
+        for (let k = 0; k < projects[i].skillTags.length; k++) {
+            cardContent += `<div class="skillTags ${projects[i].skillTags[k].type}">${projects[i].skillTags[k].name}</div>`;
+        }
+
+        let githubLogo = "https://storage.googleapis.com/edwardboado.dev/images/github.png";
+        if(mode == "dark") {
+            githubLogo = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
+        }
+        
+        cardContent += `
+                    </div>                
+                    <a href="${projects[i].urls[0].url}" target="_blank">
+                        <img src="${githubLogo}" 
+                        alt="GitHub" id="github-${projects[i].name}" class="github-project">
+                    </a>  
+                </div>
+            </div>`;
+
+        // Check if it's a personal project
+        if (projects[i].type == "personal") {
+            // Add the cards to the personal project container
+            personalProjects.innerHTML += cardContent;
+            console.log("personal");
+        } else if (projects[i].type == "school") {
+            // Else it goes in school project container
+            schoolProjects.innerHTML += cardContent;
+            console.log("school");
+        }
+    }
 }
-
-// Create class style 
-
-// var style = document.createElement('style');
-// style.type = 'text/css';
-// style.innerHTML = '.cssClass { color: #F00; }';
-// document.getElementsByTagName('head')[0].appendChild(style);
-
-// Add the class
-// document.getElementById('someElementId').className = 'cssClass';

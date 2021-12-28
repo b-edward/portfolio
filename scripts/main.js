@@ -5,12 +5,32 @@
 
 
 // Global for tracking dark/light mode
-var mode;
+var mode = "light";
 
 // Event listeners for dynamic sizing
 window.addEventListener("resize", ResetNav);
 window.addEventListener("load", ResetNav);
 window.addEventListener("load", CheckDark);
+
+
+//
+//  Check if the user prefers dark mode theme
+//
+function CheckDark() {
+  // Media query for preference
+  let dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  // Update global mode variable
+  if(dark) {
+    mode = "dark";
+      // Set theme to dark if preferred
+      SetDarkMode();
+  }
+  else {
+    mode = "light";
+  }
+}
+
 
 //
 // Toggle the nav bar button menu
@@ -98,23 +118,6 @@ function CloseNav() {
   }
 }
 
-//
-//  Check if the user prefers dark mode theme
-//
-function CheckDark() {
-  // Media query for preference
-  let dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-  // Update global mode variable
-  if(dark) {
-    mode = "dark";
-      // Set theme to dark if preferred
-      SetDarkMode();
-  }
-  else {
-    mode = "light";
-  }
-}
 
 
 //
@@ -148,11 +151,6 @@ function SetDarkMode() {
   navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButtonDark.png";
   logo.src = "https://storage.googleapis.com/edwardboado.dev/images/logoDark.png";
   github.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
-  // githubFoodSaver.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
-  // githubGreenify.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
-  // githubStudyQuiz.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
-  // githubAuctions.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
-  // githubPortfolio.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
 }
 
 
