@@ -87,7 +87,7 @@ header {
 h2 {
     text-align: center;   
     margin: 5%; 
-    font-size: 3.5vw;
+    font-size: 4vw;
     color:var(--color-title);
     letter-spacing: 2px;
 }
@@ -111,7 +111,7 @@ h2 {
 @media screen and (max-width: 1275px) {     
     #nav {
         right:0;
-    }
+    }    
 }
 
 
@@ -153,9 +153,9 @@ h2 {
     }
     
     h2 {
-        text-align: center;   
-        padding-top: 5%; 
-        font-size: 5.5vw;
+        font-size: 6vw;
+        max-width: 90%;   
+        padding-top: 8%; 
     }
    
 }

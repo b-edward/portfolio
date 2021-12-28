@@ -146,7 +146,7 @@
 				{ "line": "1", "text": "A commercial application for a logistics company to take transport contracts, hire drivers, track deliveries, and invoice the customer"},
 				{ "line": "2", "text": "Responsible for implementing Buyer subsystem to obtain contracts, process invoices, Admin subsystem to change system settings, and logging functionality"},
 				{ "line": "3", "text": "Implemented automated unit test coverage for relevant code sections (blackbox and whitebox testing), as well as manual UI testing"},
-				{ "line": "4", "text": "Systems utilizes TCP/IP sockets to connect with external API as well as internal MySQL database"},
+				{ "line": "4", "text": "System utilizes TCP/IP sockets to connect with external API as well as internal MySQL database"},
 				{ "line": "5", "text": "After a successful demo, our project received a grade of 95%"}
 			],
 			"skillTags": [
