@@ -23,11 +23,19 @@
 			],
 			"urls": [
 				{"url": "https://github.com/b-edward/CondorHacks_Hackathon"},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/foodSaver.png"}
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/foodSaver0.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/foodSaver1.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/foodSaver2.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/foodSaver3.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/foodSaver4.png"}
 			],
 			"imageDescriptions": [
 				{"description": "Github"},
-				{"description": "Food Saver Logo"}
+				{"description": "Food Saver Logo"},
+				{"description": "Modal reminder and main food item list"},
+				{"description": "Food item entry screen and Android system notification"},
+				{"description": "Google Play Store deployment"},
+				{"description": "Firebase Realtime Database"}
 			]
 		},
 		{
@@ -35,10 +43,10 @@
 			"name": "greenify",
 			"title": "Greenify Web Application",
 			"details": [
-				{ "line": "0", "text": "Team project submission for Geekfest Hackathon 2021 (4 students)"},
+				{ "line": "0", "text": "Team of 4, project submission for Geekfest Hackathon 2021 (1 day hackathon)"},
 				{ "line": "1", "text": "Project aims to gamify carbon footprint tracking to encourage users to make sustainable choices"},
 				{ "line": "2", "text": "Responsible for coordinating the team, teaching MVC design pattern and GitHub version control"},
-				{ "line": "3", "text": "Created JavaScript functions to control menu interface"},
+				{ "line": "3", "text": "Created JavaScript (jQuery) functions to create and control menu interface"},
 				{ "line": "4", "text": "Presented completed prototype through two rounds of judging"}
 			],
 			"skillTags": [
@@ -50,11 +58,19 @@
 			],
 			"urls": [
 				{"url": "https://github.com/b-edward/Geekfest_Hackathon"},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/greenify.png"}
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify0.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify1.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify2.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify3.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify4.png"}
 			],
 			"imageDescriptions": [
 				{"description": "Github"},
-				{"description": "Greenify Web Application Prototype"}
+				{"description": "High definition prototype created with Adobe XD"},
+				{"description": "Main page implemented with HTML, CSS, jQuery/JavaScript"},
+				{"description": "Code snippet - rendering category menu"},
+				{"description": "Feedback received from judges"},
+				{"description": "Hackathon participation certificate"}
 			]
 		},
 		{
@@ -77,35 +93,23 @@
 			],
 			"urls": [
 				{"url": "https://github.com/b-edward/DemoDay_StudyQuiz"},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/studyQuiz.png"}
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz0.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz1.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz2.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz3.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz4.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz5.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz6.png"}
 			],
 			"imageDescriptions": [
 				{"description": "Github"},
-				{"description": "Study Quiz Game Play"}
-			]
-		},
-		{
-			"type": "personal",
-			"name": "auctions",
-			"title": "Auctions Web Application",
-			"details": [
-				{ "line": 0, "text": "An auction sales site similar to eBay or kijiji"},
-				{ "line": 1, "text": "Users can create an account to post items for sale, as well as bid on items already listed"}
-			],
-			"skillTags": [
-				{ "type": "language", "name": "Python" },
-				{ "type": "framework", "name": "Django" },
-				{ "type": "database", "name": "SQLite" },
-				{ "type": "language", "name": "HTML" },
-				{ "type": "language", "name": "CSS" }
-			],
-			"urls": [
-				{"url": "https://github.com/b-edward/auctions"},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/auctions.png"}
-			],
-			"imageDescriptions": [
-				{"description": "Github"},
-				{"description": "Auctions Web Application"}
+				{"description": "Study Quiz game play"},
+				{"description": "Game starting screen"},
+				{"description": "Top scores leaderboard"},
+				{"description": "Code snippet: Server-side set up SQL query to get answers"},
+				{"description": "Code snippet: Server-side start TCP listening loop"},
+				{"description": "Code snippet: Client-side parse response to build the leaderboard"},
+				{"description": "Azure Virtual Machine for running Server and MySQL database"}
 			]
 		},
 		{
@@ -130,11 +134,53 @@
 			],
 			"urls": [
 				{"url": "https://github.com/b-edward/portfolio"},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/logoDark.png"}
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/portfolio0.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/portfolio1.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/portfolio2.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/portfolio3.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/portfolio4.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/portfolio5.png"}
 			],
 			"imageDescriptions": [
 				{"description": "Github"},
-				{"description": "Portfolio Web Site Logo"}
+				{"description": "Portfolio Home section with dark mode colour theme"},
+				{"description": "Mobile dynamic sizing in both dark and light mode"},
+				{"description": "Code snippet: Get JSON data from Firebase and pass to function "},
+				{"description": "Code snippet: Use the data to dynamically create project cards"},
+				{"description": "Files hosted on Google Cloud Platform - Cloud Storage"},
+				{"description": "JSON project data in Firebase Realtime Database"}
+			]
+		},
+		{
+			"type": "personal",
+			"name": "auctions",
+			"title": "Auctions Web Application",
+			"details": [
+				{ "line": 0, "text": "An auction sales site similar to eBay or kijiji"},
+				{ "line": 1, "text": "Users can create an account to post items for sale, as well as bid on items already listed"}
+			],
+			"skillTags": [
+				{ "type": "language", "name": "Python" },
+				{ "type": "framework", "name": "Django" },
+				{ "type": "database", "name": "SQLite" },
+				{ "type": "language", "name": "HTML" },
+				{ "type": "language", "name": "CSS" }
+			],
+			"urls": [
+				{"url": "https://github.com/b-edward/auctions"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/auctions0.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/auctions1.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/auctions2.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/auctions3.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/auctions4.png"}
+			],
+			"imageDescriptions": [
+				{"description": "Github"},
+				{"description": "Active listings page"},
+				{"description": "Bidding on a listing"},
+				{"description": "Add comments to communicate with other users"},
+				{"description": "Code snippet: Create a new user account on the server"},
+				{"description": "Code snippet: Data models with foreign keys"}	
 			]
 		},
 		{
@@ -162,9 +208,11 @@
 				{ "type": "other", "name": "UML" }
 			],
 			"urls": [
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/tms.png"}
+				{"url": ""},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms0.png"}
 			],
 			"imageDescriptions": [
+				{"description": "none"},
 				{"description": "TMS Login Page"}
 			]
 		},
@@ -188,9 +236,11 @@
 				{ "type": "other", "name": "Unit Test" }
 			],
 			"urls": [
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/hiLo.png"}
+				{"url": ""},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/hiLo0.png"}
 			],
 			"imageDescriptions": [
+				{"description": "none"},
 				{"description": "Hi-Lo Gameplay"}
 			]
 		},
@@ -211,9 +261,11 @@
 				{ "type": "other", "name": "IIS" }
 			],
 			"urls": [
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/server.png"}
+				{"url": ""},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/server0.png"}
 			],
 			"imageDescriptions": [
+				{"description": "none"},
 				{"description": "HTTP testing tool showing GET request and Server's response"}
 			]
 		},
@@ -238,9 +290,11 @@
 				{ "type": "other", "name": "IIS" }
 			],
 			"urls": [
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/textEditor.png"}
+				{"url": ""},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/textEditor0.png"}
 			],
 			"imageDescriptions": [
+				{"description": "none"},
 				{"description": "The text editing area user interface"}
 			]
 		},
@@ -258,10 +312,12 @@
 				{ "type": "language", "name": "C++" }
 			],
 			"urls": [
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/movie.png"}
+				{"url": ""},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/movie0.png"}
 			],
 			"imageDescriptions": [
-				{"description": "Code snippet - inserting a node into a doubly linked list"}
+				{"description": "none"},
+				{"description": "Code snippet: inserting a node into a doubly linked list"}
 			]
 		}
 	]

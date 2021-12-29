@@ -1,70 +1,125 @@
-   /* Styling for popup container */
-  .popup {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  /* Styling for popup container */
+.popup {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 12vh; 
+  left: 0;
+  top: 0;
+  width: 100vw; 
+  height: 100vh; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+/* Styling for contents */
+.popup-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+#image-area {
+  height: 90%;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  font-size: 3vh;
+  padding-top: 3vh;
+}
+
+/* Animate popup */
+.popup-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* Styling for close button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#imgClose {
+height: 4vh;
+width: auto;
+}
+
+/* Styling for next/prev buttons */
+#next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  padding: 16px;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 2%;
+}
+
+#previous {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  padding: 16px;
+  transition: 0.6s ease;
+  user-select: none;
+  left: 2%;
+}
+
+#imgPrevious, #imgNext {  
+  height: 5vh;
+  width: auto;
+}
+
+
+/* Styling for medium devices */
+@media only screen and (max-width: 925px){
+  #next, #previous {
+    top: 65%;
+    margin: 1%;
   }
-  
-  /* Styling for contents */
+}
+
+/* Styling for small devices */
+@media only screen and (max-width: 700px){
   .popup-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 80%;
-    max-height: 80%;
+    width: 100%;
   }
-  
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+}
+
+/* Styling for small devices */
+@media only screen and (max-height: 450px){
+  .popup-content {
+    width: 100%;
   }
-  
-  /* Animate popup */
-  .popup-content, #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
+
+  #next, #previous {
+    top: 40%;
+    margin: 1%;
   }
-  
-  @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-  }
-  
-  /* Styling for close button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* Styling for smaller devices */
-  @media only screen and (max-width: 700px){
-    .popup-content {
-      width: 100%;
-    }
-  }
+}

@@ -45,24 +45,24 @@ function ToggleNav() {
   // Light mode
   if(mode == "light") {
     // Check which image source is present and toggle it
-    if(navButton.src.match("https://storage.googleapis.com/edwardboado.dev/images/navButton.png")) {
-      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navX.png";
+    if(navButton.src.match("https://storage.googleapis.com/edwardboado.dev/images/ui/navButton.png")) {
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navX.png";
       nav.style.right = "0";
     }
     else {
-      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButton.png";
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navButton.png";
       nav.style.right = "-50%";
     }
   }
   // Dark mode
   else {
     // Check which image source is present and toggle it
-    if(navButton.src.match("https://storage.googleapis.com/edwardboado.dev/images/navButtonDark.png")) {
-      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navXDark.png";
+    if(navButton.src.match("https://storage.googleapis.com/edwardboado.dev/images/ui/navButtonDark.png")) {
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navXDark.png";
       nav.style.right = "0";
     }
     else {
-      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButtonDark.png";
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navButtonDark.png";
       nav.style.right = "-50%";
     }
   }
@@ -84,20 +84,20 @@ function ResetNav() {
   // Set up for large screens
   if(width > 750) {
     if(mode == "light") {
-      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navX.png";
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navX.png";
     }
     else {
-      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navXDark.png";
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navXDark.png";
     }
     nav.style.right = "0";
   }
   // Set up for large screens
   else if(width < 750) {
     if(mode == "light") {
-      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButton.png";
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navButton.png";
     }
     else {
-      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButtonDark.png";
+      navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navButtonDark.png";
     }
     nav.style.right = "-50%";
   }
@@ -136,7 +136,7 @@ function SetDarkMode() {
   document.documentElement.style.setProperty("--color-header-background-dark", "232323");
   document.documentElement.style.setProperty("--color-header-text-light", "white");
   document.documentElement.style.setProperty("--color-header-text-dark", "#ccc");
-  document.documentElement.style.setProperty("--color-title", "#004aad");
+  document.documentElement.style.setProperty("--color-title", "#38b6ff");
 
   // Get elements from DOM
   var navButton = document.getElementById('navImage');
@@ -144,9 +144,9 @@ function SetDarkMode() {
   var github = document.getElementById('github-contact');
 
   // Update elements
-  navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/navButtonDark.png";
-  logo.src = "https://storage.googleapis.com/edwardboado.dev/images/logoDark.png";
-  github.src = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
+  navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navButtonDark.png";
+  logo.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/logoDark.png";
+  github.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/githubDark.png";
 }
 
 

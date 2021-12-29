@@ -90,6 +90,7 @@ h2 {
     font-size: 4vw;
     color:var(--color-title);
     letter-spacing: 2px;
+    text-shadow: 1.5px 1.5px #004aad;
 }
 
 /* Styling for home section */

@@ -2,6 +2,9 @@
 //  This file will handle dynamic creation of project cards
 //
 
+// Global to store data
+var db = null;
+
 // Listen for page load
 window.addEventListener("load", LoadProjects);
 
@@ -24,8 +27,10 @@ function LoadProjects() {
         return response.json();
     })
     .then(function(data) {
+        // Save the data in the db global
+        db = data;
         // Call function to generate html content, sending json data 
-        GenerateProjectContent(data);
+        GenerateProjectContent(db);
     })
     .catch(function(error) {
         // Log any errors
@@ -51,9 +56,9 @@ function GenerateProjectContent(data){
         cardContent +=
         `   <!-- ${projects[i].title} -->
             <div class="project">
-                <img src="https://storage.googleapis.com/edwardboado.dev/images/${projects[i].name}.png"
-                    alt="${projects[i].title}" id="image-${projects[i].name}" 
-                    onload="PopupImage(document.getElementById('image-${projects[i].name}'));">
+                <img src="${projects[i].urls[1].url}" 
+                    alt="${projects[i].imageDescriptions[1].description}" id="${projects[i].name}" 
+                    onload="PopupImage(document.getElementById('${projects[i].name}'));">
                 <div class="content">
                     <h3>${projects[i].title}</h3>
                     <ul class="detailsList">`;
@@ -76,9 +81,9 @@ function GenerateProjectContent(data){
         // Check if it's a personal project
         if (projects[i].type == "personal") {
             // Select the github logo to append based on dark or light mode theme
-            let githubLogo = "https://storage.googleapis.com/edwardboado.dev/images/github.png";
+            let githubLogo = "https://storage.googleapis.com/edwardboado.dev/images/ui/github.png";
             if(mode == "dark") {
-                githubLogo = "https://storage.googleapis.com/edwardboado.dev/images/githubDark.png";
+                githubLogo = "https://storage.googleapis.com/edwardboado.dev/images/ui/githubDark.png";
             }
             
             // Append the github logo and link to repo

@@ -36,13 +36,12 @@
                 <li class="navlink" onclick="CloseNav();"><a href="#about">About</a></li>
                 <li class="navlink" onclick="CloseNav();"><a href="#contact">Contact</a></li>
             </ul>
-            <img src="https://storage.googleapis.com/edwardboado.dev/images/navButton.png" id="navImage" onclick="ToggleNav();">
+            <img src="https://storage.googleapis.com/edwardboado.dev/images/ui/navButton.png" id="navImage" onclick="ToggleNav();">
         </header>
-
         <!-- Home image -->
         <div id="home">
             <div id="logo-container">
-                <img id="logo" alt="Page Logo" src="https://storage.googleapis.com/edwardboado.dev/images/logoLight.png">
+                <img id="logo" alt="Page Logo" src="https://storage.googleapis.com/edwardboado.dev/images/ui/logoLight.png">
             </div>
         </div>
 
@@ -64,13 +63,22 @@
             </div>
         </div>
 
-        <!-- Large popup modal image display -->    
+        <!-- Large popup modal image display -->            
         <img id="image-trigger" src="" alt="" style="width:100%;max-width:75%">
-        <div id="image-container" class="popup">
-            <span class="close">&times;</span>
-            <img class="popup-content" id="img01">
-            <div id="caption"></div>
-        </div>
+
+        <div id="image-container" class="popup">      
+            <div id="previous">
+                <span class="prevImage"><img id="imgPrevious" src="https://storage.googleapis.com/edwardboado.dev/images/ui/prev.png"></a></span>
+            </div>   
+            <div id="image-area">
+                <span class="close"><img id="imgClose" src="https://storage.googleapis.com/edwardboado.dev/images/ui/close.png"></span>
+                <img class="popup-content" id="image-display">
+                <div id="caption"></div>
+            </div>   
+            <div id="next">
+                <span class="nextImage"><img id="imgNext"src="https://storage.googleapis.com/edwardboado.dev/images/ui/next.png"></a></span>
+            </div>
+         </div>
 
         <!-- About Me section -->
         <div class="aboutSection" id="about">
@@ -81,7 +89,7 @@
                     <div class='about-row'>
                         <div class="aboutLink">
                             <!-- My picture -->
-                            <img class='column-picture' src="https://storage.googleapis.com/edwardboado.dev/images/edward.jpg" 
+                            <img class='column-picture' src="https://storage.googleapis.com/edwardboado.dev/images/ui/edward.jpg" 
                             alt="Picture of Edward Boado" id="picture">
                             <!-- My resume -->
                             <form action="https://storage.googleapis.com/edwardboado.dev/resume/Edward-Boado-Resume.pdf" 
@@ -122,15 +130,15 @@
                 <div class="contact">
                 <!-- Email -->
                 <a href="mailto:edward@edwardboado.dev" target="_blank"><img 
-                    src="https://storage.googleapis.com/edwardboado.dev/images/email.png" alt="Email"></a>
+                    src="https://storage.googleapis.com/edwardboado.dev/images/ui/email.png" alt="Email"></a>
                 <!-- Social -->
                 <a href="https://www.instagram.com/ediamz" target="_blank"><img 
-                    src="https://storage.googleapis.com/edwardboado.dev/images/instagram.png" alt="Instagram"></a>
+                    src="https://storage.googleapis.com/edwardboado.dev/images/ui/instagram.png" alt="Instagram"></a>
                 <a href="https://www.linkedin.com/in/edward-boado" target="_blank"><img 
-                    src="https://storage.googleapis.com/edwardboado.dev/images/linkedin.png" alt="LinkedIn"></a>
+                    src="https://storage.googleapis.com/edwardboado.dev/images/ui/linkedin.png" alt="LinkedIn"></a>
                 <!-- GitHub -->
                 <a href="https://github.com/b-edward" target="_blank"><img 
-                    src="https://storage.googleapis.com/edwardboado.dev/images/github.png" alt="GitHub" id="github-contact"></a>        
+                    src="https://storage.googleapis.com/edwardboado.dev/images/ui/github.png" alt="GitHub" id="github-contact"></a>        
                 </div>
             </div>
         </div>  
@@ -138,7 +146,7 @@
         <!-- Links to external javascript files -->
         <script type="text/javascript" src="scripts/main.js"></script>    
         <script type="text/javascript" src="scripts/projects.js"></script>    
-        <script type="text/javascript" src="scripts/imagePopup.js"></script>    
+        <script type="text/javascript" src="scripts/imagePopup.js"></script>  
         <!-- <script type="text/javascript" src="https://storage.googleapis.com/edwardboado.dev/scripts/main.js"></script>
         <script type="text/javascript" src="https://storage.googleapis.com/edwardboado.dev/scripts/projects.js"></script>
         <script type="text/javascript" src="https://storage.googleapis.com/edwardboado.dev/scripts/imagePopup.js"></script> -->
