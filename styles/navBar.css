@@ -160,3 +160,30 @@ h2 {
     }
    
 }
+
+
+/* Nav style for smaller devices in landscape */
+@media screen and (max-height: 450px) {     
+    header {
+        height: 10vh;
+    }
+
+    #logo {  
+        margin:0%;   
+        max-width: 50%;
+        height: auto;
+    }  
+    
+    h2 {
+        font-size: 3vw;
+        max-width: 90%;   
+    }
+   
+    .navlink a {
+        font-size: 4.5vh;
+    }
+
+    #navTitle { 
+        font-size: 4.5vh;
+    }
+}
