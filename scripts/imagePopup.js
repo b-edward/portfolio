@@ -71,8 +71,8 @@ btnNext.addEventListener("mouseleave", function (event) {
 //
 function PopupImage(img) {
     // Get the image and caption html elements
-    var imageDisplay = document.getElementById("image-display");
-    var captionText = document.getElementById("caption");
+    let imageDisplay = document.getElementById("image-display");
+    let captionText = document.getElementById("caption");
 
     // Display the popup when user clicks on the image
     img.onclick = function(){
@@ -148,8 +148,8 @@ function DisplayNextImage() {
 //
 function DisplayNewImage() {
     // Get the image and caption html elements
-    var imageDisplay = document.getElementById("image-display");
-    var captionText = document.getElementById("caption");
+    let imageDisplay = document.getElementById("image-display");
+    let captionText = document.getElementById("caption");
 
     // Update the html elements from the arrays
     imageDisplay.src = imageLinks[currentIndex];

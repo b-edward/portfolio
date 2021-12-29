@@ -70,7 +70,8 @@ header {
 /* Nav menu toggle button for smaller devices */
 #navImage {
     position:absolute;
-    font-size: 1.4vh;
+    max-height: 90%;
+    height: auto;
     margin-top: .2vh;
     display: none;
     right: 5%;
