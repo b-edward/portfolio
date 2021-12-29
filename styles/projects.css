@@ -92,6 +92,7 @@
     background-color: #F77737;
 }
 
+
 /* Projects style for medium devices */
 @media screen and (max-width: 1275px) {  
     .projectSection .project-container .project{
@@ -114,6 +115,7 @@
     }
 
 }
+
 
 /* Nav style for smaller devices in landscape */
 @media screen and (max-height: 450px) {     

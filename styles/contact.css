@@ -39,6 +39,7 @@
     }
 }
 
+
   /* Nav style for smaller devices in landscape */
   @media screen and (max-height: 450px) {     
     .contactSection .contact-container .contact{

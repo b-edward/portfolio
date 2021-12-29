@@ -2,24 +2,24 @@
 //  This file will handle dynamic creation of project cards
 //
 
-// Global to store data
+// Global to store data from Firebase
 var db = null;
 
-// Listen for page load
+// Load the projects from Firebase when the page is loaded
 window.addEventListener("load", LoadProjects);
 
 
 //
-// Load the project data from firebase realtime database
+// Load the project data from Firebase realtime database
 //
 function LoadProjects() {
-    // Send GET request to the firebase API
+    // Send GET request to the Firebase API
     fetch('https://portfolio-336001-default-rtdb.firebaseio.com/projects.json', {
         method: 'GET',        
         accept: 'application/json',
     })
     .then(function(response) {
-        // Check that the response is in 200 range
+        // Check that HTTP response is in 200 range
         if (!response.ok) {
             throw new Error(response.statusText);
         }

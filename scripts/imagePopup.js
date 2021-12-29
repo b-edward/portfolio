@@ -2,12 +2,12 @@
 //  This file contains code for image viewing popup and scrolling
 //
 
-// Global to store image links
+// Globals to store image links and caption arrays
 var imageLinks = [];
 var imageCaptions = [];
-var currentIndex = 0;
+var currentIndex = 0;       // Tracks the index of the image currently displayed
 
-// Get the image container
+// Get the image container element
 var popup = document.getElementById("image-container");
 
 // Get button elements
@@ -15,7 +15,7 @@ var btnClose = document.getElementsByClassName("close")[0];
 var btnPrev = document.getElementsByClassName("prevImage")[0];
 var btnNext = document.getElementsByClassName("nextImage")[0];
 
-// Close the popup when user clicks close button
+// Hide the popup display when user clicks close button
 btnClose.onclick = function() {
     popup.style.display = "none";
 }
@@ -30,45 +30,39 @@ btnNext.onclick = function() {
     DisplayNextImage();
 }
 
-// Change close button on mouseenter for user feedback
+// Change close button colour on mouseenter for user feedback
 btnClose.addEventListener("mouseenter", function (event) {
     let imgClose = document.getElementById("imgClose");
     imgClose.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/closeHover.png";
-    console.log("mouse entered");
 })
-// Change close button on mouseexit for user feedback
+// Change close button colour on mouseexit for user feedback
 btnClose.addEventListener("mouseleave", function (event) {
     let imgClose = document.getElementById("imgClose");
     imgClose.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/close.png";
-    console.log("mouse entered");
 })
 
 
-// Change previous button on mouseenter for user feedback
+// Change previous button colour on mouseenter for user feedback
 btnPrev.addEventListener("mouseenter", function (event) {
     let imgPrevious = document.getElementById("imgPrevious");
     imgPrevious.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/prevHover.png";
-    console.log("mouse entered");
 })
-// Change previous button on mouseexit for user feedback
+// Change previous button colour on mouseexit for user feedback
 btnPrev.addEventListener("mouseleave", function (event) {
     let imgPrevious = document.getElementById("imgPrevious");
     imgPrevious.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/prev.png";
-    console.log("mouse entered");
 })
 
 
-// Change next button on mouseenter for user feedback
+// Change next button colour on mouseenter for user feedback
 btnNext.addEventListener("mouseenter", function (event) {
     let imgNext = document.getElementById("imgNext");
     imgNext.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/nextHover.png";
-    console.log("mouse entered");
 })
-// Change next button on mouseexit for user feedback
+// Change next button colour on mouseexit for user feedback
 btnNext.addEventListener("mouseleave", function (event) {
     let imgNext = document.getElementById("imgNext");
     imgNext.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/next.png";
-    console.log("mouse entered");
 })
 
 
@@ -101,9 +95,12 @@ function PopupImage(img) {
 //  When popup is displayed, get the other images for this project
 //
 function GetProjectImages(img) {
+    // Traverse the projects to find the one associated with this image
     for (var i = 0; i < db.length; i++) {
         if(db[i].name == img.id) {
+            // Traverse the project's image urls
             for (var j = 1; j < db[i].urls.length; j++) {      // Start at 1 because 0 is reserved for github repo
+                // Save the links and captions to global arrays
                 imageLinks.push(db[i].urls[j].url);        
                 imageCaptions.push(db[i].imageDescriptions[j].description);
             }

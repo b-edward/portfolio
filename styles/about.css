@@ -22,6 +22,7 @@
     width: 100%;
 }
 
+/* Styling for the profile picture */
 .column-picture {
   width: 25vw;
   height: min-content;
@@ -31,6 +32,7 @@
   flex: 1;
 }
 
+/* Styling for the text description */
 .aboutInfo {
   height: auto;
   padding: 2%;
@@ -41,6 +43,7 @@
   font-size: 2.3vh;
 } 
 
+/* Styling for the resume button */
 #btnResume {
   background-color: #004aad;
   border: none;
@@ -69,14 +72,15 @@
 }
 
   
-/* Nav style for medium devices */
+/* About style for medium devices */
 @media screen and (max-width: 1000px) {      
   #formResume {    
     width: 15vw;
   }
 }
 
-  /* About style for small devices */
+
+/* About style for small devices */
 @media screen and (max-width: 750px) {   
   #formResume {    
     width: 20vw;
@@ -91,38 +95,37 @@
   }
 }
 
-  /* About style for extra small devices */
-  @media screen and (max-width: 400px) {   
-    #formResume {    
-      width: 25vw;
-    }
+/* About style for extra small devices */
+@media screen and (max-width: 400px) {   
+  #formResume {    
+    width: 25vw;
+  }
+}
+
+
+/* About style for smaller devices in landscape */
+@media screen and (max-height: 450px) {     
+  .column-picture {
+    max-width: 100%;
   }
 
-
-  /* Nav style for smaller devices in landscape */
-  @media screen and (max-height: 450px) {     
-    .column-picture {
-      max-width: 100%;
-    }
-
-    #formResume {    
-      width: 15vw;
-    } 
-    
-    .aboutLink {
-      width: 40%;
-    }
-
-    #picture {
-      width: 100%;
-    }
-
-
-    .aboutInfo {
-      font-size: 4.3vh;
-    } 
+  #formResume {    
+    width: 15vw;
+  } 
   
-    #btnResume {
-      font-size: 4.3vh;
-    } 
+  .aboutLink {
+    width: 40%;
   }
+
+  #picture {
+    width: 100%;
+  }
+
+  .aboutInfo {
+    font-size: 4.3vh;
+  } 
+
+  #btnResume {
+    font-size: 4.3vh;
+  } 
+}

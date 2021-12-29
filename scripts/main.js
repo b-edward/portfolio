@@ -1,5 +1,6 @@
 //
-//  This file will handle dynamic resizing of the nav bar and dark theme toggling
+//  This file will handle onload events, dynamic resizing of the nav bar, 
+//  and dark colour theme toggling
 //
 
 
@@ -9,6 +10,8 @@ var mode = "light";
 // Event listeners for dynamic sizing
 window.addEventListener("resize", ResetNav);
 window.addEventListener("load", ResetNav);
+
+// Event listener to check for dark mode preference
 window.addEventListener("load", CheckDark);
 
 
@@ -26,6 +29,7 @@ function CheckDark() {
       SetDarkMode();
   }
   else {
+    // Default to light mode
     mode = "light";
   }
 }
@@ -36,8 +40,8 @@ function CheckDark() {
 //
 function ToggleNav() {
   // Get elements from DOM
-  var navButton = document.getElementById('navImage');
-  var nav = document.getElementById('nav');
+  let navButton = document.getElementById('navImage');
+  let nav = document.getElementById('nav');
 
   // Set up slide animation
   nav.style.transitionDuration = "700ms";
@@ -47,11 +51,11 @@ function ToggleNav() {
     // Check which image source is present and toggle it
     if(navButton.src.match("https://storage.googleapis.com/edwardboado.dev/images/ui/navButton.png")) {
       navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navX.png";
-      nav.style.right = "0";
+      nav.style.right = "0";  // Slide the menu open
     }
     else {
       navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navButton.png";
-      nav.style.right = "-50%";
+      nav.style.right = "-50%"; // Slide the menu closed
     }
   }
   // Dark mode
@@ -59,11 +63,11 @@ function ToggleNav() {
     // Check which image source is present and toggle it
     if(navButton.src.match("https://storage.googleapis.com/edwardboado.dev/images/ui/navButtonDark.png")) {
       navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navXDark.png";
-      nav.style.right = "0";
+      nav.style.right = "0";  // Slide the menu open
     }
     else {
       navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navButtonDark.png";
-      nav.style.right = "-50%";
+      nav.style.right = "-50%"; // Slide the menu closed
     }
   }
 }
@@ -74,14 +78,14 @@ function ToggleNav() {
 //
 function ResetNav() {
   // Get elements from DOM
-  var navButton = document.getElementById('navImage');
-  var nav = document.getElementById('nav');
-  var width = document.documentElement.clientWidth;
+  let navButton = document.getElementById('navImage');
+  let nav = document.getElementById('nav');
+  let width = window.innerWidth;
 
-  // disable slide animation
+  // Disable slide animation
   nav.style.transitionDuration = "0ms";
 
-  // Set up for large screens
+  // Set up for larger screens
   if(width > 750) {
     if(mode == "light") {
       navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navX.png";
@@ -89,9 +93,9 @@ function ResetNav() {
     else {
       navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navXDark.png";
     }
-    nav.style.right = "0";
+    nav.style.right = "0";  // Slide the menu open
   }
-  // Set up for large screens
+  // Set up for smaller screens
   else if(width < 750) {
     if(mode == "light") {
       navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navButton.png";
@@ -99,7 +103,7 @@ function ResetNav() {
     else {
       navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navButtonDark.png";
     }
-    nav.style.right = "-50%";
+    nav.style.right = "-50%";  // Slide the menu closed
   }
 }
 
@@ -108,16 +112,14 @@ function ResetNav() {
 // Close vertical nav bar
 //
 function CloseNav() {
-  // Get elements from DOM
-  var navButton = document.getElementById('navImage');
-  var width = document.documentElement.clientWidth;
-
-  // Check if the vertical bar is open
+  // Get width from the DOM
+  let width = window.innerWidth;
+  
+  // If its smaller width, we know the vertical nav is used
   if(width < 750) {
     ToggleNav();
   }
 }
-
 
 
 //
@@ -139,11 +141,11 @@ function SetDarkMode() {
   document.documentElement.style.setProperty("--color-title", "#38b6ff");
 
   // Get elements from DOM
-  var navButton = document.getElementById('navImage');
-  var logo = document.getElementById('logo');
-  var github = document.getElementById('github-contact');
+  let navButton = document.getElementById('navImage');
+  let logo = document.getElementById('logo');
+  let github = document.getElementById('github-contact');
 
-  // Update elements
+  // Change elements to dark mode equivalents
   navButton.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/navButtonDark.png";
   logo.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/logoDark.png";
   github.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/githubDark.png";

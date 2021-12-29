@@ -345,7 +345,7 @@
 			"details": [
 				{ "line": "0", "text": "A console application that took in title, genre, and rating information and stored each movie in doubly-linked lists"},
 				{ "line": "1", "text": "Implemented linked lists, sort, and search algorithms from first principles (no libraries allowed)"},
-				{ "line": "2", "text": "Received a grade of 100"}
+				{ "line": "2", "text": "Received a grade of 100%"}
 			],
 			"skillTags": [
 				{ "type": "language", "name": "C" },
