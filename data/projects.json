@@ -205,15 +205,35 @@
 				{ "type": "other", "name": "TDD" },
 				{ "type": "other", "name": "Unit Test" },
 				{ "type": "other", "name": "Integration Test" },
-				{ "type": "other", "name": "UML" }
+				{ "type": "other", "name": "UML" },
+				{ "type": "other", "name": "Doxygen" }
 			],
 			"urls": [
 				{"url": ""},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms0.png"}
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms0.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms1.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms2.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms3.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms4.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms5.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms6.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms7.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms8.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms9.png"}
+				
 			],
 			"imageDescriptions": [
 				{"description": "none"},
-				{"description": "TMS Login Page"}
+				{"description": "TMS Login Page"},
+				{"description": "Buyer - generate invoices on completed orders"},
+				{"description": "Admin - update carrier table in the database"},
+				{"description": "Code snippet: create a new order from a contract"},
+				{"description": "Code snippet: insert new order into the database"},
+				{"description": "Code snippet: unit testing the Contract class methods"},
+				{"description": "Unit Test Summary"},
+				{"description": "Test plan for the project - all methods covered"},
+				{"description": "Class diagram for Buyer subsystem"},
+				{"description": "Azure DevOps utilized to manage Agile/Scrum sprints"}
 			]
 		},
 		{
@@ -237,11 +257,19 @@
 			],
 			"urls": [
 				{"url": ""},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/hiLo0.png"}
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/hiLo0.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/hiLo1.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/hiLo2.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/hiLo3.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/hiLo4.png"}
 			],
 			"imageDescriptions": [
 				{"description": "none"},
-				{"description": "Hi-Lo Gameplay"}
+				{"description": "Hi-Lo Gameplay"},
+				{"description": "Winning screen"},
+				{"description": "Game deployed to Azure App Service"},
+				{"description": "Code snippet: input validation and state management"},
+				{"description": "Code snippet: page load event and state management"}
 			]
 		},
 		{
@@ -262,11 +290,17 @@
 			],
 			"urls": [
 				{"url": ""},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/server0.png"}
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/server0.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/server1.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/server2.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/server3.png"}
 			],
 			"imageDescriptions": [
 				{"description": "none"},
-				{"description": "HTTP testing tool showing GET request and Server's response"}
+				{"description": "HTTP testing tool showing GET request and Server's response"},
+				{"description": "Code snippet: TCP listen and stream read"},
+				{"description": "Code snippet: parsing client request and building HTTP response"},
+				{"description": "Code snippet: read binary image files"}
 			]
 		},
 		{
@@ -291,11 +325,17 @@
 			],
 			"urls": [
 				{"url": ""},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/textEditor0.png"}
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/textEditor0.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/textEditor1.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/textEditor2.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/textEditor3.png"}
 			],
 			"imageDescriptions": [
 				{"description": "none"},
-				{"description": "The text editing area user interface"}
+				{"description": "The text editing area user interface"},
+				{"description": "Code snippet: animate status messages in upper left area"},
+				{"description": "Code snippet: inititialize UI on page load"},
+				{"description": "Code snippet: jQuery AJAX call to read files"}
 			]
 		},
 		{
@@ -313,11 +353,15 @@
 			],
 			"urls": [
 				{"url": ""},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/movie0.png"}
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/movie0.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/movie1.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/movie2.png"}
 			],
 			"imageDescriptions": [
 				{"description": "none"},
-				{"description": "Code snippet: inserting a node into a doubly linked list"}
+				{"description": "Code snippet: inserting a node into a doubly linked list"},
+				{"description": "Code snippet: dynamic memory allocation"},
+				{"description": "User interface"}
 			]
 		}
 	]

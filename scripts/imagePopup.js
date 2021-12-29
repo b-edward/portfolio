@@ -30,6 +30,47 @@ btnNext.onclick = function() {
     DisplayNextImage();
 }
 
+// Change close button on mouseenter for user feedback
+btnClose.addEventListener("mouseenter", function (event) {
+    let imgClose = document.getElementById("imgClose");
+    imgClose.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/closeHover.png";
+    console.log("mouse entered");
+})
+// Change close button on mouseexit for user feedback
+btnClose.addEventListener("mouseleave", function (event) {
+    let imgClose = document.getElementById("imgClose");
+    imgClose.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/close.png";
+    console.log("mouse entered");
+})
+
+
+// Change previous button on mouseenter for user feedback
+btnPrev.addEventListener("mouseenter", function (event) {
+    let imgPrevious = document.getElementById("imgPrevious");
+    imgPrevious.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/prevHover.png";
+    console.log("mouse entered");
+})
+// Change previous button on mouseexit for user feedback
+btnPrev.addEventListener("mouseleave", function (event) {
+    let imgPrevious = document.getElementById("imgPrevious");
+    imgPrevious.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/prev.png";
+    console.log("mouse entered");
+})
+
+
+// Change next button on mouseenter for user feedback
+btnNext.addEventListener("mouseenter", function (event) {
+    let imgNext = document.getElementById("imgNext");
+    imgNext.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/nextHover.png";
+    console.log("mouse entered");
+})
+// Change next button on mouseexit for user feedback
+btnNext.addEventListener("mouseleave", function (event) {
+    let imgNext = document.getElementById("imgNext");
+    imgNext.src = "https://storage.googleapis.com/edwardboado.dev/images/ui/next.png";
+    console.log("mouse entered");
+})
+
 
 //
 // Respond to thumb image onclick event by enlarging image for viewing
@@ -68,9 +109,6 @@ function GetProjectImages(img) {
             }
         }
     }
-    console.log(imageLinks.length);
-    console.log(imageCaptions.length);
-    console.log(currentIndex);
 }
 
 
@@ -112,11 +150,6 @@ function DisplayNextImage() {
 //  Display the image link at the current index
 //
 function DisplayNewImage() {
-    console.log(currentIndex);
-    console.log(imageLinks[currentIndex]);
-    console.log(imageCaptions[currentIndex]);
-
-
     // Get the image and caption html elements
     var imageDisplay = document.getElementById("image-display");
     var captionText = document.getElementById("caption");
