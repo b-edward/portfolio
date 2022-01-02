@@ -41,13 +41,13 @@
 		{
 			"type": "personal",
 			"name": "greenify",
-			"title": "Greenify Web Application",
+			"title": "Greenify Web Application Prototype",
 			"details": [
 				{ "line": "0", "text": "Team of 4, project submission for Geekfest Hackathon 2021 (1 day hackathon)"},
 				{ "line": "1", "text": "Project aims to gamify carbon footprint tracking to encourage users to make sustainable choices"},
 				{ "line": "2", "text": "Responsible for coordinating the team, teaching MVC design pattern and GitHub version control"},
-				{ "line": "3", "text": "Created JavaScript (jQuery) functions to create and control menu interface"},
-				{ "line": "4", "text": "Presented completed prototype through two rounds of judging"}
+				{ "line": "3", "text": "Assisted with creating JavaScript (jQuery) functions to create and control menu interface"},
+				{ "line": "4", "text": "Responsible for presenting the completed prototype through two rounds of judging"}
 			],
 			"skillTags": [
 				{ "type": "language", "name": "HTML" },
@@ -99,7 +99,8 @@
 				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz3.png"},
 				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz4.png"},
 				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz5.png"},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz6.png"}
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz6.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/studyQuiz7.png"}
 			],
 			"imageDescriptions": [
 				{"description": "Github"},
@@ -109,6 +110,7 @@
 				{"description": "Code snippet: Server-side set up SQL query to get answers"},
 				{"description": "Code snippet: Server-side start TCP listening loop"},
 				{"description": "Code snippet: Client-side parse response to build the leaderboard"},
+				{"description": "Enhanced Entity-Relationship diagram"},
 				{"description": "Azure Virtual Machine for running Server and MySQL database"}
 			]
 		},
@@ -191,7 +193,7 @@
 				{ "line": "0", "text": "Term Project completed with a team of 4 students using Agile/Scrum methodology"},
 				{ "line": "1", "text": "A commercial application for a logistics company to take transport contracts, hire drivers, track deliveries, and invoice the customer"},
 				{ "line": "2", "text": "Responsible for implementing Buyer subsystem to obtain contracts, process invoices, Admin subsystem to change system settings, and logging functionality"},
-				{ "line": "3", "text": "Implemented automated unit test coverage for relevant code sections (blackbox and whitebox testing), as well as manual UI testing"},
+				{ "line": "3", "text": "Responsible for automated unit test coverage of relevant code sections (blackbox and whitebox testing), as well as manual UI testing"},
 				{ "line": "4", "text": "System utilizes TCP/IP sockets to connect with external API as well as internal MySQL database"},
 				{ "line": "5", "text": "After a successful demo, our project received a grade of 95%"}
 			],
@@ -219,7 +221,8 @@
 				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms6.png"},
 				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms7.png"},
 				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms8.png"},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms9.png"}
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms9.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/schoolProjects/tms10.png"}
 				
 			],
 			"imageDescriptions": [
@@ -233,6 +236,7 @@
 				{"description": "Unit Test Summary"},
 				{"description": "Test plan for the project - all methods covered"},
 				{"description": "Class diagram for Buyer subsystem"},
+				{"description": "Enhanced Entity-Relationship diagram"},
 				{"description": "Azure DevOps utilized to manage Agile/Scrum sprints"}
 			]
 		},
@@ -251,7 +255,6 @@
 				{ "type": "language", "name": "HTML" },
 				{ "type": "language", "name": "CSS" },
 				{ "type": "framework", "name": "ASP.NET" },
-				{ "type": "database", "name": "MySQL" },
 				{ "type": "cloud", "name": "Azure App Service"},
 				{ "type": "other", "name": "Unit Test" }
 			],
@@ -308,8 +311,8 @@
 			"name": "textEditor",
 			"title": "Text Editor Web Application",
 			"details": [
-				{ "line": "0", "text": "A partner-based project that uses jQuery AJAX calls to simulate a 'Captain's Log' online text editor"},
-				{ "line": "1", "text": "Modeled on the Star Trek computer screens, this editor allows users to create, read, and update a log entry online"},
+				{ "line": "0", "text": "A partner-based project modeled on the Star Trek computer screens, this editor allows users to create, read, and update a log entry online"},
+				{ "line": "1", "text": "Responsible for front-end UI implementation, assisted with implementation of back-end jQuery AJAX calls"},
 				{ "line": "2", "text": "Logs are transferred in JSON format and parsed by the server, which creates, reads and writes to a local text file"},
 				{ "line": "3", "text": "Received a grade of 100%"}
 			],
