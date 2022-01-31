@@ -15,7 +15,7 @@
 				{ "type": "language", "name": "C#" },
 				{ "type": "framework", "name": ".NET" },
 				{ "type": "framework", "name": "Xamarin" },
-				{ "type": "cloud", "name": "Google Cloud Platform" },
+				{ "type": "cloud", "name": "Google Cloud" },
 				{ "type": "cloud", "name": "Firebase" },
 				{ "type": "database", "name": "NoSQL" },
 				{ "type": "other", "name": "Android" },
@@ -40,37 +40,51 @@
 		},
 		{
 			"type": "personal",
-			"name": "greenify",
-			"title": "Greenify Web Application Prototype",
+			"name": "inventoryTracker",
+			"title": "Inventory Tracker Web Application",
 			"details": [
-				{ "line": "0", "text": "Team of 4, project submission for Geekfest Hackathon 2021 (1 day hackathon)"},
-				{ "line": "1", "text": "Project aims to gamify carbon footprint tracking to encourage users to make sustainable choices"},
-				{ "line": "2", "text": "Responsible for coordinating the team, teaching MVC design pattern and GitHub version control"},
-				{ "line": "3", "text": "Assisted with creating JavaScript (jQuery) functions to create and control menu interface"},
-				{ "line": "4", "text": "Responsible for presenting the completed prototype through two rounds of judging"}
+				{ "line": "0", "text": "A client-server inventory tracking single page application"},
+				{ "line": "1", "text": "The tracker application validates user input, creates SQL queries, sends requests to the server, parses and displays the response"},
+				{ "line": "2", "text": "The multi-threaded Data Server handles MySQL database access and transfers data using a custom protocol"},
+				{ "line": "3", "text": "Developed in C# using .Net and ASP.NET, hosted on Microsoft Azure"},
+				{ "line": "4", "text": "Focused on extensible and maintainable backend web development using SOLID design principles - minimal frontend UI"},
+				{ "line": "5", "text": "<a href='https://inventory-tracker.azurewebsites.net/' style='color:var(--color-accent-dark);' target='_blank'>Try it out</a> (full screen recommended)"}			
 			],
 			"skillTags": [
-				{ "type": "language", "name": "HTML" },
-				{ "type": "language", "name": "CSS" },
+				{ "type": "language", "name": "C#" },
 				{ "type": "language", "name": "JavaScript" },
-				{ "type": "framework", "name": "jQuery" },
-				{ "type": "other", "name": "Hackathon" }
+				{ "type": "framework", "name": ".NET" },
+				{ "type": "framework", "name": "ASP.NET" },
+				{ "type": "database", "name": "MySQL" },
+				{ "type": "cloud", "name": "Azure VM" },
+				{ "type": "cloud", "name": "Azure App Service" },
+				{ "type": "other", "name": "SOLID" },
+				{ "type": "other", "name": "API" },
+				{ "type": "other", "name": "MS Test" }
 			],
 			"urls": [
-				{"url": "https://github.com/b-edward/Geekfest_Hackathon"},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify0.png"},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify1.png"},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify2.png"},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify3.png"},
-				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify4.png"}
+				{"url": "https://github.com/b-edward/inventory-tracker"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/inventoryTracker0.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/inventoryTracker1.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/inventoryTracker2.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/inventoryTracker3.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/inventoryTracker4.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/inventoryTracker5.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/inventoryTracker6.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/inventoryTracker7.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/inventoryTracker8.png"}
 			],
 			"imageDescriptions": [
 				{"description": "Github"},
-				{"description": "High definition prototype created with Adobe XD"},
-				{"description": "Main page implemented with HTML, CSS, jQuery/JavaScript"},
-				{"description": "Code snippet - rendering category menu"},
-				{"description": "Feedback received from judges"},
-				{"description": "Hackathon participation certificate"}
+				{"description": "Adding new products to the database"},
+				{"description": "Viewing all unsold items in the inventory"},
+				{"description": "C# code snippet: Server converting a relational data table to a string for TCP response"},
+				{"description": "JavaScript code snippet: Product form input validation"},
+				{"description": "MS Unit Test results for inventory tracker component"},
+				{"description": "EER diagram for the MySQL database"},
+				{"description": "Snippet from diagram showing some of the controller and model classes"},
+				{"description": "Microsoft Azure App Service for running the Inventory Tracker"},
+				{"description": "Microsoft Azure Virtual Machine for running the Data Service and MySQL database"}
 			]
 		},
 		{
@@ -81,15 +95,15 @@
 				{ "line": "0", "text": "Individual submission for Google Developer Student Club's Demo Day Competition 2021"},
 				{ "line": "1", "text": "A quiz program for students to practice for tests and exams"},
 				{ "line": "2", "text": "Points are timer based, with players and scores tracked to show a leaderboard"},
-				{ "line": "3", "text": "Server hosted on MS Azure Virtual Machine, using a MySQL database"},
-				{ "line": "4", "text": "Supports multiple simultaneous client games"}
+				{ "line": "3", "text": "Server hosted on Microsoft Azure Virtual Machine, using a MySQL database"},
+				{ "line": "4", "text": "Multi-threaded server supports multiple simultaneous client games"}
 			],
 			"skillTags": [
 				{ "type": "language", "name": "C#" },
 				{ "type": "framework", "name": ".NET" },
 				{ "type": "framework", "name": "WPF" },
 				{ "type": "database", "name": "MySQL" },
-				{ "type": "cloud", "name": "Azure Virtual Machine" }
+				{ "type": "cloud", "name": "Azure VM" }
 			],
 			"urls": [
 				{"url": "https://github.com/b-edward/DemoDay_StudyQuiz"},
@@ -130,7 +144,7 @@
 				{ "type": "language", "name": "CSS" },
 				{ "type": "language", "name": "JavaScript" },
 				{ "type": "database", "name": "NoSQL" },
-				{ "type": "cloud", "name": "Google Cloud Platform" },
+				{ "type": "cloud", "name": "Google Cloud" },
 				{ "type": "cloud", "name": "Firebase" },
 				{ "type": "cloud", "name": "Cloud Storage" }
 			],
@@ -151,6 +165,41 @@
 				{"description": "Code snippet: Use the data to dynamically create project cards"},
 				{"description": "Files hosted on Google Cloud Platform - Cloud Storage"},
 				{"description": "JSON project data in Firebase Realtime Database"}
+			]
+		},
+		{
+			"type": "personal",
+			"name": "greenify",
+			"title": "Greenify Web Application Prototype",
+			"details": [
+				{ "line": "0", "text": "Team of 4, project submission for Geekfest Hackathon 2021 (1 day hackathon)"},
+				{ "line": "1", "text": "Project aims to gamify carbon footprint tracking to encourage users to make sustainable choices"},
+				{ "line": "2", "text": "Responsible for coordinating the team, teaching MVC design pattern and GitHub version control"},
+				{ "line": "3", "text": "Assisted with creating JavaScript (jQuery) functions to create and control menu interface"},
+				{ "line": "4", "text": "Responsible for presenting the completed prototype through two rounds of judging"}
+			],
+			"skillTags": [
+				{ "type": "language", "name": "HTML" },
+				{ "type": "language", "name": "CSS" },
+				{ "type": "language", "name": "JavaScript" },
+				{ "type": "framework", "name": "jQuery" },
+				{ "type": "other", "name": "Hackathon" }
+			],
+			"urls": [
+				{"url": "https://github.com/b-edward/Geekfest_Hackathon"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify0.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify1.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify2.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify3.png"},
+				{"url": "https://storage.googleapis.com/edwardboado.dev/images/personalProjects/greenify4.png"}
+			],
+			"imageDescriptions": [
+				{"description": "Github"},
+				{"description": "High definition prototype created with Adobe XD"},
+				{"description": "Main page implemented with HTML, CSS, jQuery/JavaScript"},
+				{"description": "Code snippet: Rendering category menu"},
+				{"description": "Feedback received from judges"},
+				{"description": "Hackathon participation certificate"}
 			]
 		},
 		{
@@ -205,8 +254,7 @@
 				{ "type": "other", "name": "Agile" },
 				{ "type": "other", "name": "Scrum" },
 				{ "type": "other", "name": "TDD" },
-				{ "type": "other", "name": "Unit Test" },
-				{ "type": "other", "name": "Integration Test" },
+				{ "type": "other", "name": "MS Test" },
 				{ "type": "other", "name": "UML" },
 				{ "type": "other", "name": "Doxygen" }
 			],
@@ -230,9 +278,9 @@
 				{"description": "TMS Login Page"},
 				{"description": "Buyer - generate invoices on completed orders"},
 				{"description": "Admin - update carrier table in the database"},
-				{"description": "Code snippet: create a new order from a contract"},
-				{"description": "Code snippet: insert new order into the database"},
-				{"description": "Code snippet: unit testing the Contract class methods"},
+				{"description": "Code snippet: Create a new order from a contract"},
+				{"description": "Code snippet: Insert new order into the database"},
+				{"description": "Code snippet: Unit testing the Contract class methods"},
 				{"description": "Unit Test Summary"},
 				{"description": "Test plan for the project - all methods covered"},
 				{"description": "Class diagram for Buyer subsystem"},
@@ -246,8 +294,8 @@
 			"title": "Hi-Lo Game Web Application",
 			"details": [
 				{ "line": "0", "text": "A client-server application that plays a guessing game where application will tell the player if they are too high or too low until they guess the correct number"},
-				{ "line": "1", "text": "Created with ASP.NET and hosted on Azure App Service"},
-				{ "line": "2", "text": "<a href='https://hiloserver-eb.azurewebsites.net' target='_blank'>Play the game</a> (full screen required)"},
+				{ "line": "1", "text": "Created with ASP.NET and hosted on Microsoft Azure App Service"},
+				{ "line": "2", "text": "<a href='https://hiloserver-eb.azurewebsites.net' style='color:var(--color-accent-dark);' target='_blank'>Play the game</a> (full screen required)"},
 				{ "line": "3", "text": "Received a grade of 97%"}
 			],
 			"skillTags": [
@@ -256,7 +304,7 @@
 				{ "type": "language", "name": "CSS" },
 				{ "type": "framework", "name": "ASP.NET" },
 				{ "type": "cloud", "name": "Azure App Service"},
-				{ "type": "other", "name": "Unit Test" }
+				{ "type": "other", "name": "MS Test" }
 			],
 			"urls": [
 				{"url": ""},
@@ -270,9 +318,9 @@
 				{"description": "none"},
 				{"description": "Hi-Lo Gameplay"},
 				{"description": "Winning screen"},
-				{"description": "Game deployed to Azure App Service"},
-				{"description": "Code snippet: input validation and state management"},
-				{"description": "Code snippet: page load event and state management"}
+				{"description": "Game deployed to Microsoft Azure App Service"},
+				{"description": "Code snippet: Input validation and state management"},
+				{"description": "Code snippet: Page load event and state management"}
 			]
 		},
 		{
@@ -302,8 +350,8 @@
 				{"description": "none"},
 				{"description": "HTTP testing tool showing GET request and Server's response"},
 				{"description": "Code snippet: TCP listen and stream read"},
-				{"description": "Code snippet: parsing client request and building HTTP response"},
-				{"description": "Code snippet: read binary image files"}
+				{"description": "Code snippet: Parsing client request and building HTTP response"},
+				{"description": "Code snippet: Read binary image files"}
 			]
 		},
 		{
@@ -336,8 +384,8 @@
 			"imageDescriptions": [
 				{"description": "none"},
 				{"description": "The text editing area user interface"},
-				{"description": "Code snippet: animate status messages in upper left area"},
-				{"description": "Code snippet: inititialize UI on page load"},
+				{"description": "Code snippet: Animate status messages in upper left area"},
+				{"description": "Code snippet: Initialize UI on page load"},
 				{"description": "Code snippet: jQuery AJAX call to read files"}
 			]
 		},
@@ -362,8 +410,8 @@
 			],
 			"imageDescriptions": [
 				{"description": "none"},
-				{"description": "Code snippet: inserting a node into a doubly linked list"},
-				{"description": "Code snippet: dynamic memory allocation"},
+				{"description": "Code snippet: Inserting a node into a doubly linked list"},
+				{"description": "Code snippet: Dynamic memory allocation"},
 				{"description": "User interface"}
 			]
 		}

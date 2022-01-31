@@ -76,8 +76,6 @@ function GenerateProjectContent(data){
             cardContent += `<div class="skillTags ${projects[i].skillTags[k].type}">${projects[i].skillTags[k].name}</div>`;
         }
 
-
-
         // Check if it's a personal project
         if (projects[i].type == "personal") {
             // Select the github logo to append based on dark or light mode theme
