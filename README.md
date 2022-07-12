@@ -9,7 +9,7 @@ This project:
 * Backend hosted on Google Cloud Platform's Cloud Storage and Firebase Realtime Database
 * Uses custom domain: edwardboado.dev [NOTE: custom domain server temporarily disconnected due to excessive Compute Engine costs.] 
 
-### [Go to Portfolio Website](https://edwardboado.dev)
+### [Go to Portfolio Website](https://storage.googleapis.com/edwardboado.dev/index.html)
 
 
 ![User Interface Example](https://github.com/b-edward/portfolio/blob/main/images/personalProjects/portfolio0.png)
