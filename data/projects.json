@@ -47,8 +47,7 @@
 				{ "line": "1", "text": "The tracker application validates user input, creates SQL queries, sends requests to the server, parses and displays the response"},
 				{ "line": "2", "text": "The multi-threaded Data Server handles MySQL database access and transfers data using a custom protocol"},
 				{ "line": "3", "text": "Developed in C# using .Net and ASP.NET, hosted on Microsoft Azure"},
-				{ "line": "4", "text": "Focused on extensible and maintainable backend web development using SOLID design principles - minimal frontend UI"},
-				{ "line": "5", "text": "<a href='https://inventory-tracker.azurewebsites.net/' style='color:var(--color-accent-dark);' target='_blank'>Try it out</a> (full screen recommended)"}			
+				{ "line": "4", "text": "Focused on extensible and maintainable backend web development using SOLID design principles - minimal frontend UI"}			
 			],
 			"skillTags": [
 				{ "type": "language", "name": "C#" },
@@ -295,7 +294,6 @@
 			"details": [
 				{ "line": "0", "text": "A client-server application that plays a guessing game where application will tell the player if they are too high or too low until they guess the correct number"},
 				{ "line": "1", "text": "Created with ASP.NET and hosted on Microsoft Azure App Service"},
-				{ "line": "2", "text": "<a href='https://hiloserver-eb.azurewebsites.net' style='color:var(--color-accent-dark);' target='_blank'>Play the game</a> (full screen required)"},
 				{ "line": "3", "text": "Received a grade of 97%"}
 			],
 			"skillTags": [
